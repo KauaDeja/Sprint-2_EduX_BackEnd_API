@@ -7,13 +7,10 @@ namespace Projeto_EduXSprint2.Domains
     public partial class Turma
     {
 
-        [Key]
-        public Guid Id { get; set; }
         public Turma()
         {
             AlunoTurma = new HashSet<AlunoTurma>();
             ProfessorTurma = new HashSet<ProfessorTurma>();
-            Id = Guid.NewGuid();
         }
 
         public Guid IdTurma { get; set; }

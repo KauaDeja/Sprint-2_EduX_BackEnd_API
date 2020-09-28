@@ -6,12 +6,9 @@ namespace Projeto_EduXSprint2.Domains
 {
     public partial class Dica
     {
-        [Key]
-        public Guid Id { get; set; }
         public Dica()
         {
             Curtida = new HashSet<Curtida>();
-            Id = Guid.NewGuid();
         }
 
         public Guid IdDica { get; set; }
