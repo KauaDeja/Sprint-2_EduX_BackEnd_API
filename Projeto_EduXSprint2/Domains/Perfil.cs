@@ -6,12 +6,11 @@ namespace Projeto_EduXSprint2.Domains
 {
     public partial class Perfil
     {
-        [Key]
-        public Guid Id { get; set; }
+
         public Perfil()
         {
             Usuario = new HashSet<Usuario>();
-            Id = Guid.NewGuid();
+            IdPerfil = Guid.NewGuid();
         }
 
         public Guid IdPerfil { get; set; }
