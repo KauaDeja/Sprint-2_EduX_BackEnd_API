@@ -1,11 +1,17 @@
-﻿using System;
+﻿using Projeto_EduXSprint2.Domains;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Projeto_EduXSprint2.Interfaces
 {
-    public class IObjetivoRepository
+    interface IObjetivoRepository
     {
+        List<Objetivo> Listar();
+        Objetivo Buscar(Guid id);
+        void AdicionarObjetivo(Objetivo obj);
+        void Editar(Objetivo obj);
+        void Remover(Guid id);
     }
 }

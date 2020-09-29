@@ -6,12 +6,10 @@ namespace Projeto_EduXSprint2.Domains
 {
     public partial class Curso
     {
-        [Key]
-        public Guid Id { get; set; }
+     
         public Curso()
         {
             Turma = new HashSet<Turma>();
-            Id = Guid.NewGuid();
         }
 
         public Guid IdCurso { get; set; }
