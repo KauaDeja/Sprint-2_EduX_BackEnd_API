@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 namespace Projeto_EduXSprint2.Domains
 {
     public partial class Turma
     {
 
-        [Key]
-        public Guid Id { get; set; }
         public Turma()
         {
             AlunoTurma = new HashSet<AlunoTurma>();
             ProfessorTurma = new HashSet<ProfessorTurma>();
-            Id = Guid.NewGuid();
+            IdCurso = Guid.NewGuid();
+            IdTurma = Guid.NewGuid();
+
         }
 
         public Guid IdTurma { get; set; }
