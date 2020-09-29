@@ -11,7 +11,7 @@ namespace Projeto_EduXSprint2.Interfaces
         List<Objetivo> Listar();
         Objetivo Buscar(Guid id);
         void AdicionarObjetivo(Objetivo obj);
-        void Editar(Objetivo obj);
+        void Editar(Guid id , Objetivo obj);
         void Remover(Guid id);
     }
 }

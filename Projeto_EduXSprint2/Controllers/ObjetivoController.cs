@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Projeto_EduXSprint2.Domains;
@@ -81,6 +82,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// Cadastra novos objetivos no banco de dados
         /// </summary>
         /// <returns>Objetivo adicionado</returns>
+        [Authorize]
         [HttpPost]
         public IActionResult Post([FromForm] Objetivo objetivo)
         {
@@ -104,12 +106,13 @@ namespace Projeto_EduXSprint2.Controllers
         /// <param name="id">Id do objetivo cadastrado</param>
         /// <param name="objetivo">Novo objetivo a ser inserido</param>
         /// <returns></returns>
+        [Authorize]
         [HttpPut("{id}")]
-        public IActionResult Put([FromForm]Guid id, Objetivo objetivo)
+        public IActionResult Put(Guid id,[FromBody] Objetivo objetivo)
         {
             try
             {
-                objetivoRepository.Editar(objetivo);
+                objetivoRepository.Editar(id ,objetivo);
                 return Ok(objetivo);
             }
             catch (Exception ex)
@@ -127,6 +130,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="id">Id do objetivo que será deletado</param>
         /// <returns></returns>
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {

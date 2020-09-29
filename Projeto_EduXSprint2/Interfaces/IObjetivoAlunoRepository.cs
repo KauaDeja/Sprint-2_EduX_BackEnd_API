@@ -12,7 +12,7 @@ namespace Projeto_EduXSprint2.Interfaces
         ObjetivoAluno Buscar(Guid id);
         void Adicionar(ObjetivoAluno objAluno);
         void Remover(Guid id);
-        void Editar(ObjetivoAluno objAluno);
+        void Editar(Guid id ,ObjetivoAluno objAluno);
      
 
 
