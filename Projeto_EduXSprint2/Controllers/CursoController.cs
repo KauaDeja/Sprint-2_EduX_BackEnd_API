@@ -45,7 +45,6 @@ namespace Projeto_EduXSprint2.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
         /// <summary>
         /// Busca um curso pelo seu id
         /// </summary>
@@ -60,7 +59,7 @@ namespace Projeto_EduXSprint2.Controllers
                 var curso = _cursoRepository.BuscarPorId(id);
 
                 // Aqui nós fazemos uma verificação para saber se esse curso buscado existe. Caso n exista retorna
-                // Retorna Notfound- Produto n encontrado
+                // Retorna Notfound- Curso n encontrado
                 if (curso == null)
 
                     return NotFound();
@@ -116,7 +115,7 @@ namespace Projeto_EduXSprint2.Controllers
                 if (cursoTemp == null)
                     return NotFound();
 
-                // retorna ok com os dados do produto alterado
+                // retorna ok com os dados do curso alterado
                 return Ok(curso);
             }
             catch (Exception ex)
