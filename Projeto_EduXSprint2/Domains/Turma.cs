@@ -10,7 +10,6 @@ namespace Projeto_EduXSprint2.Domains
         {
             AlunoTurma = new HashSet<AlunoTurma>();
             ProfessorTurma = new HashSet<ProfessorTurma>();
-            IdCurso = Guid.NewGuid();
             IdTurma = Guid.NewGuid();
 
         }

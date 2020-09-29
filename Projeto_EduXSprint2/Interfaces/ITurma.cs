@@ -9,7 +9,7 @@ namespace Projeto_EduXSprint2.Interfaces {
             Turma BuscarPorId(Guid id);
             List<Turma> BuscarPorNome(string nome);
             void Adicionar(Turma turma);
-            void Editar(Turma turma);
+            void Editar(Guid id, Turma turma);
             void Remover(Guid id);
         }
     }

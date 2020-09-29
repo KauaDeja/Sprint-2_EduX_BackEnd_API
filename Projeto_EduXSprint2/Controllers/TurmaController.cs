@@ -31,10 +31,7 @@ namespace Projeto_EduXSprint2.Controllers {
             }
         }
         
-        /// <summary>
-        /// Fazendo Get
-        /// </summary>
-        /// <returns></returns>
+        // Fazendo Get
 
         [HttpGet("{id}")]
         public IActionResult Get(Guid id) {
@@ -71,7 +68,7 @@ namespace Projeto_EduXSprint2.Controllers {
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, Turma turma) {
             try {
-                _turmaRepository.Editar(turma);
+                _turmaRepository.Editar(id, turma);
 
                 return Ok(turma);
             }

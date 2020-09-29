@@ -42,13 +42,15 @@ namespace Projeto_EduXSprint2.Repositories {
             }
         }
 
-        public void Editar(Turma turma) {
+        public void Editar(Guid id , Turma turma) {
             try {
-                Turma turmaTemp = BuscarPorId(turma.IdTurma);
+                Turma turmaTemp = BuscarPorId(id);
 
                 if (turmaTemp == null)
                     throw new Exception("Turma não encontrada");
 
+
+                turmaTemp.IdTurma = turma.IdTurma;
                 turmaTemp.Descricao = turma.Descricao;
                 turmaTemp.IdCurso = turma.IdCurso;
 
