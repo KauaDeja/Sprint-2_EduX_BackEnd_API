@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Projeto_EduXSprint2.Domains;
 using Projeto_EduXSprint2.Repositories;
+using Projeto_EduXSprint2.Utills;
 
 namespace Projeto_EduXSprint2.Controllers
 {
@@ -19,6 +20,7 @@ namespace Projeto_EduXSprint2.Controllers
         {
             _usuarioRepository = new UsuarioRepository();
         }
+
         /// <summary>
         /// Lista todos os usuarios cadastrados
         /// </summary>
@@ -67,7 +69,7 @@ namespace Projeto_EduXSprint2.Controllers
             try
             {
                 // Busco o usuario pelo id lá no repositorio
-                var usuario = _usuarioRepository.BuscarPorId(id);
+                Usuario usuario = _usuarioRepository.BuscarPorId(id);
 
                 // Aqui nós fazemos uma verificação para saber se esse usuario buscado existe. Caso n exista retorna
                 // Retorna Notfound- usuario n encontrado
@@ -88,7 +90,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="nome">string do nome</param>
         /// <returns>Retorna o usuario buscado</returns>
-        [HttpGet("{nome}")]
+        [HttpGet("nome/{nome}")]
         public IActionResult Get(string nome)
         {
             try
@@ -120,16 +122,18 @@ namespace Projeto_EduXSprint2.Controllers
         /// <param name="usuario">Objeto do tipo usuario</param>
         /// <returns>Retorna o usuario cadastrado</returns>
         [HttpPost]
-        public IActionResult Post([FromForm] Usuario usuario)// passou como parametro um formulario
+        public IActionResult Post([FromBody] Usuario usuario)// passou como parametro um formulario
         {
             try
             {
+                usuario.Senha = Crypto.Criptografar(usuario.Senha, usuario.Email.Substring(0, 4));
 
                 // Adiciona um usuario
                 _usuarioRepository.Cadastrar(usuario);
 
                 // retorna ok com os dados do usuario cadastrado
                 return Ok(usuario);
+
             }
             catch (Exception ex)
             {

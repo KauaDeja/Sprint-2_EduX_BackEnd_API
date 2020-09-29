@@ -72,8 +72,40 @@ namespace Projeto_EduXSprint2.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        
         /// <summary>
-        /// Cadastra um curso
+        /// Busca um curso pelo seu titulo
+        /// </summary>
+        /// <param name="titulo">Titulo do curso</param>
+        /// <returns>Retorna o curso buscado</returns>
+        [HttpGet("titulo/{titulo}")]
+        public IActionResult Get(string titulo)
+        {
+            try
+            {
+                // Busco o curso pelo id lá no repositorio
+                var curso = _cursoRepository.BuscarporTitulo(titulo);
+
+                // Aqui nós fazemos uma verificação para saber se esse curso buscado existe. Caso n exista retorna
+                // Retorna Notfound- curso n encontrado
+                if (curso == null)
+
+                    return NotFound();
+
+
+                // Caso o curso exista retorna
+                // Ok e seus dados
+                return Ok(curso);
+
+            }
+            catch (Exception ex)
+            {
+                // Caso ocorra algum erro retorna BadRequest e a msg de erro
+                return BadRequest(ex.Message);
+            }
+        }
+        /// <summary>
+        /// Cadastra o curso
         /// </summary>
         /// <param name="curso">Objeto do tipo curso</param>
         /// <returns>Retorna o curso cadastrado</returns>
