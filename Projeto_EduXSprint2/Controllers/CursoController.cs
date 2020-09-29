@@ -51,7 +51,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// <param name="id">id do curso</param>
         /// <returns>Retorna o curso buscado</returns>
         [HttpGet("{id}")]
-        public ActionResult Get(Guid id)
+        public IActionResult Get(Guid id)
         {
             try
             {
@@ -72,7 +72,6 @@ namespace Projeto_EduXSprint2.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
         /// <summary>
         /// Cadastra um curso
         /// </summary>

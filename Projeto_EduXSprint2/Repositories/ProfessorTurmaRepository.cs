@@ -25,7 +25,7 @@ namespace Projeto_EduXSprint2.Repositories
             try
             {
                 // Adiciona o professor
-                cont.Set<ProfessorTurma>().Update(professorturma);
+                cont.ProfessorTurma.Add(professorturma);
 
                 // Salva as alterações no DbContext
                 cont.SaveChanges();

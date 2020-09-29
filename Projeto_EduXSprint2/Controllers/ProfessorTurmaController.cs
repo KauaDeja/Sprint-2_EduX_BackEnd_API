@@ -52,7 +52,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// <param name="id">Id do professor</param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public ActionResult Get(Guid id)
+        public IActionResult Get(Guid id)
         {
             try
             {
