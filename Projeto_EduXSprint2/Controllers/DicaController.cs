@@ -1,0 +1,150 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Projeto_EduXSprint2.Domains;
+using Projeto_EduXSprint2.Repositories;
+
+namespace Projeto_EduXSprint2.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class DicaController : ControllerBase
+    {
+        private readonly DicaRepository _dicaRepository;
+
+        public DicaController()
+        {
+            _dicaRepository = new DicaRepository();
+        }
+        /// <summary>
+        /// Lista todos os cursos cadastrados
+        /// </summary>
+        /// <returns>Retorna a lista de cursos</returns>
+        [HttpGet]
+        public IActionResult Get()
+        {
+            try
+            {
+                var dicas = _dicaRepository.LerTodos();
+
+                if (dicas.Count == 0)
+                    return NoContent();
+
+                return Ok(dicas);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+
+            }
+        }
+        [HttpGet("{id}")]
+        public ActionResult Get(Guid id)
+        {
+            try
+            {
+                // Busca o id da dica pelo id lá no repositorio
+                var dica = _dicaRepository.BuscarPorId(id);
+
+                // Aqui nós fazemos uma verificação para saber se esse curso buscado existe. Caso n exista retorna
+                // Retorna Notfound- Produto n encontrado
+                if (dica == null)
+
+                    return NotFound();
+
+                return Ok(dica);
+            }
+            catch (Exception ex)
+            {
+                // Caso ocorra algum erro retorna BadRequest e a msg de erro
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpPost]
+        public IActionResult Post([FromForm] Dica dica)// passou como parametro um formulario
+        {
+            try
+            {
+                // verifico se foi enviado arquivo com imagem 
+                if (dica.Imagem != null)
+                {
+                    // gero o nome do arquivo unico 
+                    // pego a extensao do arquivo 
+                    //concateno o nome do arquivo com a extensao 
+                    //arquivo.png
+                    var nomeArquivo = Guid.NewGuid().ToString().Replace("-", "") + Path.GetExtension(dica.Imagem.FileName);
+
+                    //GetCurrentDirectory = pega o caminho do dretorio atual, aplicando esta
+                    var caminhoArquivo = Path.Combine(Directory.GetCurrentDirectory(), @"wwwRoot\Upload\Imagens", nomeArquivo);
+
+                    // crio um objeto do tipo FileStream passando o caminho do arquivo 
+                    // passa para criar este aquivo 
+                    using var streamImagem = new FileStream(caminhoArquivo, FileMode.Create);
+
+                    dica.Imagem.CopyTo(streamImagem);
+
+                    dica.UrlImagem = "http://localhost:44305/Upload/Imagens/" + nomeArquivo;
+                }
+
+                // Adiciona uma dica
+                _dicaRepository.Adicionar(dica);
+
+                // retorna ok com os dados do curtida cadastrado
+                return Ok(dica);
+            }
+            catch (Exception ex)
+            {
+                // Caso ocorra algum erro retorna BadRequest e a msg de erro
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpPut("{id}")]
+        public IActionResult Put(Guid id, Dica dica)
+        {
+            try
+            {
+                //certamente se ele passou pelo buscar Id ele existe
+                var dicaTemp = _dicaRepository.BuscarPorId(id);
+
+                // fAZ A verificação do produto
+                if (dicaTemp == null)
+                    return NotFound();
+
+                // retorna ok com os dados do curtida alterado
+                return Ok(dica);
+            }
+            catch (Exception ex)
+            {
+                // Caso ocorra algum erro retorna BadRequest e a msg de erro
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpDelete("{id}")]
+        public IActionResult Remover(Guid id)
+        {
+            try
+            {
+                // Remove o produto pelo id
+                _dicaRepository.Excluir(id);
+
+                // em caso de sucesso de sua remoção
+                // em caso de sucesso de sua remoção
+                //retorna um ok e mostra o Id 
+                return Ok(id);
+
+
+            }
+            catch (Exception ex)
+            {
+
+                // Caso ocorra algum erro retorna BadRequest e a msg de erro
+                return BadRequest(ex.Message);
+            }
+        }
+
+    }
+}

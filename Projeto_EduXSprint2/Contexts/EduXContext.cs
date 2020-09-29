@@ -121,9 +121,8 @@ namespace Projeto_EduXSprint2.Contexts
 
                 entity.Property(e => e.IdDica).ValueGeneratedNever();
 
-                entity.Property(e => e.Imagem)
-                    .HasMaxLength(255)
-                    .IsUnicode(false);
+                entity.Ignore(c => c.Imagem);
+
 
                 entity.Property(e => e.Texto)
                     .HasMaxLength(255)

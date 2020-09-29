@@ -15,6 +15,10 @@ namespace Projeto_EduXSprint2.Repositories
         {
             context= new EduXContext();
         }
+        /// <summary>
+        /// Adiciona uma Dica
+        /// </summary>
+        /// <param name="dica"> Id da Dica</param>
         public void Adicionar(Dica dica)
         {
             try
@@ -34,6 +38,11 @@ namespace Projeto_EduXSprint2.Repositories
             }
         }
 
+        /// <summary>
+        /// Busca pelo Id da Dica
+        /// </summary>
+        /// <param name="id"> Id da Dica</param>
+        /// <returns> Retorna o Id da Dica</returns>
         public Dica BuscarPorId(Guid id)
         {
             try
@@ -47,6 +56,10 @@ namespace Projeto_EduXSprint2.Repositories
             }
         }
 
+        /// <summary>
+        /// Edita uma Dica
+        /// </summary>
+        /// <param name="dica"> Id da Dica</param>
         public void Editar(Dica dica)
         {
             try
@@ -57,7 +70,7 @@ namespace Projeto_EduXSprint2.Repositories
                     throw new Exception("Dica não encontrada.");
 
                 dicatemp.Texto = dica.Texto;
-                dicatemp.Imagem = dica.Imagem;
+                dicatemp.UrlImagem = dica.UrlImagem;
 
                 context.Update(dicatemp);
                 context.SaveChanges();
@@ -69,6 +82,10 @@ namespace Projeto_EduXSprint2.Repositories
             }
         }
 
+        /// <summary>
+        /// Exclui uma Dica
+        /// </summary>
+        /// <param name="id"> Id da Dica</param>
         public void Excluir(Guid id)
         {
             try
@@ -88,6 +105,10 @@ namespace Projeto_EduXSprint2.Repositories
             }
         }
 
+        /// <summary>
+        /// Lê todas as Dicas
+        /// </summary>
+        /// <returns> Retorna uma List de todas as Dicas</returns>
         public List<Dica> LerTodos()
         {
             try

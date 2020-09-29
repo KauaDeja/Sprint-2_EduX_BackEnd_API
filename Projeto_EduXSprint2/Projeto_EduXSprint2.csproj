@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <Folder Include="Utils\" />
+    <Folder Include="wwwRoot\Upload\Imagens\" />
   </ItemGroup>
 
   <ItemGroup>
