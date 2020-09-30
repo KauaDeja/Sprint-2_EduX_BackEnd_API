@@ -75,7 +75,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// <param name="curtida"> Objeto do tipo Curtida</param>
         /// <returns> Retorna Curtida cadastrada </returns>
         [HttpPost]
-        public IActionResult Post([FromForm] Curtida curtida)// passou como parametro um formulario
+        public IActionResult Post([FromBody] Curtida curtida)// passou como parametro um formulario
         {
             try
             {

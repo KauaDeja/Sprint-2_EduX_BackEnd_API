@@ -75,7 +75,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// <param name="dica"></param>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult Post([FromForm] Dica dica)// passou como parametro um formulario
+        public IActionResult Post([FromBody] Dica dica)// passou como parametro um formulario
         {
             try
             {

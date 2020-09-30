@@ -54,7 +54,7 @@ namespace Projeto_EduXSprint2.Controllers
                 return BadRequest(new
                 {
                     statusCode = 400,
-                    error = "Ocorreu um erro no endpoint Get/produtos. Envie um e-mail para email@gmail.com informando"
+                    error = "Ocorreu um erro no endpoint Get/Usuario. Envie um e-mail para email@gmail.com informando"
                 });
             }
         }

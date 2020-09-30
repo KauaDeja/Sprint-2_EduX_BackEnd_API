@@ -104,7 +104,7 @@ namespace Projeto_EduXSprint2.Controller
         /// <returns></returns>
         // POST api/<PerfilController>
         [HttpPost]
-        public IActionResult Post([FromForm] Categoria categoria)
+        public IActionResult Post([Frombody] Categoria categoria)
         {
             try
             {

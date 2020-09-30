@@ -75,7 +75,6 @@ namespace EduX_Projeto.Controllers
         /// </summary>
         /// <param name="login">login do usuario</param>
         /// <returns>Retorna a resposta</returns>
-        [AllowAnonymous]
         [HttpPost]
         public IActionResult Login([FromBody] Usuario login)
         {

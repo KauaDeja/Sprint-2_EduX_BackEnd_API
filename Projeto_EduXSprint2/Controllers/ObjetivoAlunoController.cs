@@ -84,7 +84,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// <returns>ObjetivoAluno adicionado</returns>
         [Authorize]
         [HttpPost]
-        public IActionResult Post([FromForm] ObjetivoAluno objetivoAl)
+        public IActionResult Post([FromBody] ObjetivoAluno objetivoAl)
         {
             try
             {

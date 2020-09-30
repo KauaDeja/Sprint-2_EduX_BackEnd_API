@@ -68,7 +68,7 @@ namespace Projeto_EduXSprint2.Controllers {
         /// <returns></returns>
         //fazendo Post
         [HttpPost]
-        public IActionResult Post([FromForm] Turma turma) {
+        public IActionResult Post([FromBody] Turma turma) {
             try {
 
                 _turmaRepository.Adicionar(turma);
