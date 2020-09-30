@@ -9,7 +9,10 @@ namespace Projeto_EduXSprint2.Domains
         public Categoria()
         {
             Objetivo = new HashSet<Objetivo>();
+<<<<<<< HEAD
             IdCategoria = Guid.NewGuid();
+=======
+>>>>>>> 3c07407f424fc1cb164ca7023d52b74aabe965ab
         }
 
         public Guid IdCategoria { get; set; }

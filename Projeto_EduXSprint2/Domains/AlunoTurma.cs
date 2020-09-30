@@ -5,10 +5,18 @@ namespace Projeto_EduXSprint2.Domains
 {
     public partial class AlunoTurma
     {
+<<<<<<< HEAD
         public AlunoTurma()
         {
             ObjetivoAluno = new HashSet<ObjetivoAluno>();
             IdAlunoTurma = Guid.NewGuid();
+=======
+       
+        public AlunoTurma()
+        {
+            ObjetivoAluno = new HashSet<ObjetivoAluno>();
+
+>>>>>>> 3c07407f424fc1cb164ca7023d52b74aabe965ab
         }
 
         public Guid IdAlunoTurma { get; set; }

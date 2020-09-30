@@ -9,7 +9,10 @@ namespace Projeto_EduXSprint2.Domains
         public Instituicao()
         {
             Curso = new HashSet<Curso>();
+<<<<<<< HEAD
             IdInstituicao = Guid.NewGuid();
+=======
+>>>>>>> 3c07407f424fc1cb164ca7023d52b74aabe965ab
         }
 
         public Guid IdInstituicao { get; set; }

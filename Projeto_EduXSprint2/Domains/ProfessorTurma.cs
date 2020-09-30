@@ -6,9 +6,15 @@ namespace Projeto_EduXSprint2.Domains
 {
     public partial class ProfessorTurma
     {
+<<<<<<< HEAD
         public ProfessorTurma()
         {
             IdProfessorTurma = Guid.NewGuid();
+=======
+
+        public ProfessorTurma()
+        {
+>>>>>>> 3c07407f424fc1cb164ca7023d52b74aabe965ab
         }
         public Guid IdProfessorTurma { get; set; }
         public string Descricao { get; set; }

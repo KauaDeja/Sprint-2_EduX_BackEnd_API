@@ -7,9 +7,27 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<NoWarn>$(NoWarn);1591</NoWarn>
 	</PropertyGroup>
+	<ItemGroup>
+	  <Compile Remove="Interfaces\**" />
+	  <Compile Remove="Repositories\**" />
+	  <Compile Remove="Utills\**" />
+	  <Content Remove="Interfaces\**" />
+	  <Content Remove="Repositories\**" />
+	  <Content Remove="Utills\**" />
+	  <EmbeddedResource Remove="Interfaces\**" />
+	  <EmbeddedResource Remove="Repositories\**" />
+	  <EmbeddedResource Remove="Utills\**" />
+	  <None Remove="Interfaces\**" />
+	  <None Remove="Repositories\**" />
+	  <None Remove="Utills\**" />
+	</ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <Folder Include="Utills\" />
+=======
+    <Folder Include="Controllers\" />
+>>>>>>> 3c07407f424fc1cb164ca7023d52b74aabe965ab
   </ItemGroup>
 
   <ItemGroup>
