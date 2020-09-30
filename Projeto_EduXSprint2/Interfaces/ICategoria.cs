@@ -16,7 +16,7 @@ namespace Projeto_EduXSprint2.Interfaces
 
         void Adicionar(Categoria categoria);
 
-        void Alterar(Categoria categoria);
+        void Alterar(Guid id, Categoria categoria);
 
         void Deletar(Guid id);
     }

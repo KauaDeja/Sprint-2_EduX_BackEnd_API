@@ -12,9 +12,10 @@ namespace Projeto_EduXSprint2.Repositories
     {
         private readonly EduXContext _ctx;
 
-        public CategoriaRepository(){
+        public CategoriaRepository()
+        {
             _ctx = new EduXContext();
-            }
+        }
 
         public void Adicionar(Categoria categoria)
         {
@@ -33,19 +34,19 @@ namespace Projeto_EduXSprint2.Repositories
             }
         }
 
-        public void Alterar(Categoria categoria)
+        public void Alterar(Guid id,Categoria categoria)
         {
             try
             {
                 //Faz a busca dos Ids
-                Categoria categoria1 = BuscarPorId(categoria.IdCategoria);
+                Categoria categoria1 = BuscarPorId(id);
                 //Se o prefil não for encontrado ele irá aparecer está mensagem de erro
                 if (categoria1 == null)
                     throw new Exception("A sua categoria não foi encontrada");
 
                 //Se existir o perfil, ele irá alteralo através de sua permissão
                 categoria1.Tipo = categoria.Tipo;
-                
+
                 _ctx.Categoria.Update(categoria1);
                 //Salva as Alterações
                 _ctx.SaveChanges();
@@ -80,7 +81,7 @@ namespace Projeto_EduXSprint2.Repositories
             try
             {
                 //Faz a busca através de sua Permissão e a retorna
-                return _ctx.Categoria.Where(p => p.Tipo == tipo).ToList();
+                return _ctx.Categoria.Where(p => p.Tipo.Contains(tipo)).ToList();
 
             }
             catch (Exception ex)

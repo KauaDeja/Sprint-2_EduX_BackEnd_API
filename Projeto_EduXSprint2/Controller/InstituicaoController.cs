@@ -27,7 +27,7 @@ namespace Projeto_EduXSprint2.Controller
         /// <returns></returns>
         // GET: api/<PerfilController>
         [HttpGet]
-        
+
         public IActionResult Get()
         {
             try
@@ -70,6 +70,42 @@ namespace Projeto_EduXSprint2.Controller
                 return BadRequest(ex.Message);
             }
         }
+
+
+
+        /// <summary>
+        /// Faz busca das instituições através destas infos
+        /// </summary>
+        /// <param name="Nome"></param>
+        /// <param name="Logradouro"></param>
+        /// <param name="Numero"></param>
+        /// <param name="Complemento"></param>
+        /// <param name="Bairro"></param>
+        /// <param name="cidade"></param>
+        /// <param name="Uf"></param>
+        /// <param name="Cep"></param>
+        /// <returns></returns>
+
+        // GET api/<PerfilController>/5
+        [HttpGet("Nome, Logradouro, Numero, Complemento, Bairro, cidade, Uf, Cep/{Nome, Logradouro, Numero, Complemento, Bairro, cidade, Uf, Cep}")]
+        public IActionResult Get(string Nome, string Logradouro, string Numero, string Complemento, string Bairro, string cidade, string Uf, string Cep)
+        {
+            try
+            {
+                var instituicao = _instituicaoRepository.BuscarPorDados(Nome, Logradouro, Numero, Complemento, Bairro, cidade, Uf, Cep);
+
+                if (instituicao == null)
+                    return NotFound();
+
+                return Ok(instituicao);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
         /// <summary>
         /// Cadastra as Instituições
         /// </summary>
@@ -105,7 +141,7 @@ namespace Projeto_EduXSprint2.Controller
             try
             {
 
-                _instituicaoRepository.Alterar(instituicao);
+                _instituicaoRepository.Alterar(id, instituicao);
 
                 //Retorna Ok com os dados do produto
                 return Ok(instituicao);

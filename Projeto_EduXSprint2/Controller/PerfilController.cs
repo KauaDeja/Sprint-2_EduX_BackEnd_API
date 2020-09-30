@@ -73,6 +73,26 @@ namespace Projeto_EduXSprint2.Controller
             }
         }
 
+
+        [HttpGet("permissao/{permissao}")]
+        public IActionResult Get(string permissao)
+        {
+            try
+            {
+                var perfil = _perfilRepository.BuscarPorPermissao(permissao);
+
+                if (perfil == null)
+                    return NotFound();
+
+                return Ok(perfil);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
         /// <summary>
         /// Cadastra os Perfils
         /// </summary>
@@ -110,7 +130,7 @@ namespace Projeto_EduXSprint2.Controller
             try
             {
 
-                _perfilRepository.Alterar(perfil);
+                _perfilRepository.Alterar(id, perfil);
 
                 //Retorna Ok com os dados do produto
                 return Ok(perfil);

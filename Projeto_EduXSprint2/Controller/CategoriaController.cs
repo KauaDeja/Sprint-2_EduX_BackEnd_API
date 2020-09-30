@@ -69,6 +69,33 @@ namespace Projeto_EduXSprint2.Controller
                 return BadRequest(ex.Message);
             }
         }
+
+        /// <summary>
+        /// Faz a busca através dos Ids das categorias
+        /// </summary>
+        /// <param name="tipo"></param>
+        /// <returns></returns>
+        /// 
+        // GET api/<PerfilController>/5
+        [HttpGet("tipo/{tipo}")]
+        public IActionResult Get(string tipo)
+        {
+            try
+            {
+                var categoria = _categoriaRepository.BuscarPorTipo(tipo);
+
+                if (categoria == null)
+                    return NotFound();
+
+                return Ok(categoria);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
         /// <summary>
         /// Cadastra novas categorias
         /// </summary>
@@ -105,7 +132,7 @@ namespace Projeto_EduXSprint2.Controller
             try
             {
 
-                _categoriaRepository.Alterar(categoria);
+                _categoriaRepository.Alterar(id, categoria);
 
                 //Retorna Ok com os dados do produto
                 return Ok(categoria);

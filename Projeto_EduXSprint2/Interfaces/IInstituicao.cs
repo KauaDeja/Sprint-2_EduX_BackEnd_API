@@ -15,7 +15,7 @@ namespace Projeto_EduXSprint2.Interfaces
         List<Instituicao> BuscarPorDados(string Nome, string Logradouro, string Numero, string Complemento, string Bairro, string Cidade, string Uf, string Cep);
         void Adicionar(Instituicao instituicao);
 
-        void Alterar(Instituicao instituicao);
+        void Alterar(Guid id, Instituicao instituicao);
 
         void Deletar(Guid id);
     }

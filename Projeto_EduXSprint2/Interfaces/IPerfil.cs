@@ -16,7 +16,7 @@ namespace Projeto_EduXSprint2.Interfaces
 
         void Adicionar(Perfil perfil);
 
-        void Alterar(Perfil perfil);
+        void Alterar(Guid id, Perfil perfil);
 
         void Deletar(Guid id);
     }

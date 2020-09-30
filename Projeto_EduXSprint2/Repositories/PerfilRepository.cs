@@ -71,7 +71,7 @@ namespace Projeto_EduXSprint2.Repositories
             try
             {
                 //Faz a busca através de sua Permissão
-                return _ctx.Perfil.Where(p => p.Permissao == permissao).ToList();
+                return _ctx.Perfil.Where(p => p.Permissao.Contains(permissao)).ToList();
 
             }
             catch (Exception ex)
@@ -85,18 +85,20 @@ namespace Projeto_EduXSprint2.Repositories
         /// Edita o Perfl através de seu Id
         /// </summary>
         /// <param name="perfil">Id do Perfil</param>
+        /// /// <param name="id">Id do Perfil</param>
 
-        public void Alterar(Perfil perfil)
+        public void Alterar(Guid id, Perfil perfil)
         {
             try
             {
                 //Faz a busca dos Ids
-                Perfil perfils = BuscarPorId(perfil.IdPerfil);
+                Perfil perfils = BuscarPorId(id);
                 //Se o prefil não for encontrado ele irá aparecer está mensagem de erro
                 if (perfils == null)
                     throw new Exception("O perfil não foi encontrado");
 
                 //Se existir o perfil, ele irá alteralo através de sua permissão
+                
                 perfils.Permissao = perfil.Permissao;
 
                 _ctx.Perfil.Update(perfils);

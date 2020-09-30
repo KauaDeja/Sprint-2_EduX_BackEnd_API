@@ -36,7 +36,7 @@ namespace Projeto_EduXSprint2.Repositories
         public List<Instituicao> BuscarPorDados(string Nome, string Logradouro, string Numero, string Complemento, string Bairro, string Cidade, string Uf, string Cep)
         {
             //Retorna todas as informações buscadas
-            return _ctx.Instituicao.Where(i => i.Nome == Nome || i.Logradouro == Logradouro || i.Numero == Numero || i.Complemento == Complemento || i.Bairro == Bairro || i.Cidade == Cidade || i.Uf == Uf || i.Cep == Cep).ToList();
+            return _ctx.Instituicao.Where(i => i.Nome.Contains(Nome) || i.Logradouro.Contains(Logradouro) || i.Numero.Contains(Numero) || i.Complemento.Contains (Complemento) || i.Bairro.Contains(Bairro) || i.Cidade.Contains(Cidade) || i.Uf.Contains(Uf) || i.Cep.Contains(Cep)).ToList();
 
         }
 
@@ -57,17 +57,17 @@ namespace Projeto_EduXSprint2.Repositories
         }
 
 
-        public void Alterar(Instituicao instituicao)
+        public void Alterar(Guid id, Instituicao instituicao)
         {
             try
             {
                 //Faz a busca dos Ids
-                Instituicao instituicao1 = BuscarPorId(instituicao.IdInstituicao);
+                Instituicao instituicao1 = BuscarPorId(id);
                 //Se o prefil não for encontrado ele irá aparecer está mensagem de erro
                 if (instituicao1 == null)
                     throw new Exception("A instituição não foi encontrada");
 
-                //Se existir o perfil, ele irá alteralo através de sua permissão
+                //Se existir a instituicao, ele irá alteralo através dos dados
                 instituicao1.Nome = instituicao.Nome;
                 instituicao1.Logradouro = instituicao.Logradouro;
                 instituicao1.Numero = instituicao.Numero;
