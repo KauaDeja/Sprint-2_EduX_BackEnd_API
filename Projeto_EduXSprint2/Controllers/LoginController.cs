@@ -35,6 +35,7 @@ namespace EduX_Projeto.Controllers
         }
         private Usuario AuthenticateUser(Usuario login)
         {
+            login.Senha = Crypto.Criptografar(login.Senha, login.Email.Substring(0, 4));
             return _context.Usuario
                 .Include(a => a.IdPerfilNavigation)
                 .FirstOrDefault(u => u.Email == login.Email && u.Senha == login.Senha);
