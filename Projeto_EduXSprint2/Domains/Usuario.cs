@@ -6,7 +6,11 @@ namespace Projeto_EduXSprint2.Domains
 {
     public partial class Usuario
     {
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 13736be80c8b2c4180a7339713c8164335ef1281
         public Usuario()
         {
             AlunoTurma = new HashSet<AlunoTurma>();

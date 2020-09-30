@@ -7,9 +7,20 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<NoWarn>$(NoWarn);1591</NoWarn>
 	</PropertyGroup>
+	<ItemGroup>
+	  <Compile Remove="Utills\**" />
+	  <Content Remove="Utills\**" />
+	  <EmbeddedResource Remove="Utills\**" />
+	  <None Remove="Utills\**" />
+	</ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <Folder Include="Utills\" />
+=======
+    <Folder Include="Utils\" />
+    <Folder Include="wwwRoot\Upload\Imagens\" />
+>>>>>>> 13736be80c8b2c4180a7339713c8164335ef1281
   </ItemGroup>
 
   <ItemGroup>

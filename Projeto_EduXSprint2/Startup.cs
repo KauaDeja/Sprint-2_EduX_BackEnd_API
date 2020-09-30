@@ -95,6 +95,8 @@ namespace Projeto_EduXSprint2
 
             app.UseAuthorization();
 
+            app.UseStaticFiles();
+
             // Usamos efetivamente o swagger
             app.UseSwagger();
 
