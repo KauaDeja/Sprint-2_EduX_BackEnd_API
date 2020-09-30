@@ -6,13 +6,14 @@ namespace Projeto_EduXSprint2.Domains
 {
     public partial class ObjetivoAluno
     {
-        [Key]
-        public Guid Id { get; set; }
+       
         public ObjetivoAluno()
         {
-            Id = Guid.NewGuid();
+            IdObjetivoAluno = Guid.NewGuid();
+            DataAlcancado = DateTime.Now;
         }
         public Guid IdObjetivoAluno { get; set; }
+
         public DateTime? DataAlcancado { get; set; }
         public decimal? Nota { get; set; }
         public Guid? IdAlunoTurma { get; set; }

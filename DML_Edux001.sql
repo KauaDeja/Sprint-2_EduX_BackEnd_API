@@ -25,11 +25,11 @@ INSERT INTO Categoria (	IdCategoria,Tipo)
 
 INSERT INTO Usuario(IdUsuario,Nome,Senha,Email,DataCadastro,DataUltimoAcesso, IdPerfil)
 	VALUES
-	(NEWID(),'Kaua', '1234578','kaua@gmail.com','2020-03-03T15:00:00','2020-03-03T15:00:00','0EE3B25D-A503-4C77-AA0A-0E60F669B66F');
+	(NEWID(),'Kaua', '1234578','kaua@gmail.com','2020-03-03T15:00:00','2020-03-03T15:00:00','09799970-39A8-4684-B43C-B398188EB89C');
 
 INSERT INTO Dica(IdDica,Texto,Imagem, IdUsuario)
 	VALUES
-	(NEWID(),'Como resolver matrizes', 'http:hhwbuyhfbwtvfdwy/imagens','8327CBFB-F2A5-4102-9A8D-5640DBB585B5');
+	(NEWID(),'Como resolver matrizes', 'http:hhwbuyhfbwtvfdwy/imagens','B3B7A676-3708-4917-8FAF-A7424B8A69A6');
 
 INSERT INTO Instituicao(IdInstituicao,Nome,Logradouro,Numero,Complemento,Bairro,Cidade, UF, CEP)
 	VALUES
@@ -43,18 +43,18 @@ INSERT INTO Objetivo(IdObjetivo,Descricao, IdCategoria)
 
 INSERT INTO Curso (IdCurso,Titulo, IdInstituicao)
 	VALUES
-	(NEWID(),'DEV','1DE3006A-1BCA-44B6-A292-046C2F9F66CA'),
-	(NEWID(),'Analises Quimica','1DE3006A-1BCA-44B6-A292-046C2F9F66CA'),
-	(NEWID(),'Multimidia','1DE3006A-1BCA-44B6-A292-046C2F9F66CA');
+	(NEWID(),'DEV','382BE7E5-3A3D-4EE0-B9C6-4BDFF86341FB'),
+	(NEWID(),'Analises Quimica','382BE7E5-3A3D-4EE0-B9C6-4BDFF86341FB'),
+	(NEWID(),'Multimidia','382BE7E5-3A3D-4EE0-B9C6-4BDFF86341FB');
 
 INSERT INTO Turma(IdTurma,Descricao, IdCurso)
 	VALUES
-	(NEWID(),'Sala extremamente peculiar', '14FF57D4-689E-4451-A143-434E86472AEE');
+	(NEWID(),'Sala extremamente peculiar', '430D9C4E-1AB2-4F83-98FD-EAFAE7DBB336');
 
 
 INSERT INTO Curtida(IdCurtida,IdUsuario,IdDica)
 	VALUES
-	(NEWID(),'8327CBFB-F2A5-4102-9A8D-5640DBB585B5','B0911B38-9B44-4E9F-A5A1-EE0F6070FE33' );
+	(NEWID(),'B3B7A676-3708-4917-8FAF-A7424B8A69A6','E45C4FB5-EBA0-46C1-B854-20581F85E533' );
 
 INSERT INTO ProfessorTurma(IdProfessorTurma,Descricao,IdUsuario,IdTurma)
 	VALUES
@@ -62,7 +62,7 @@ INSERT INTO ProfessorTurma(IdProfessorTurma,Descricao,IdUsuario,IdTurma)
 
 INSERT INTO AlunoTurma(IdAlunoTurma,Matricula,IdUsuario,IdTurma)
 	VALUES
-	(NEWID(),'8990875','8327CBFB-F2A5-4102-9A8D-5640DBB585B5','0C2E0BB8-E03E-488C-97C4-419B48F6E9D2');
+	(NEWID(),'89585875','B3B7A676-3708-4917-8FAF-A7424B8A69A6','77DB0703-5102-4F98-A03D-76408F819C1E');
 
 INSERT INTO ObjetivoAluno(IdObjetivoAluno,DataAlcancado,Nota,IdAlunoTurma,IdObjetivo)
 	VALUES
