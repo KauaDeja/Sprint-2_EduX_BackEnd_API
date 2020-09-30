@@ -6,9 +6,9 @@ namespace Projeto_EduXSprint2.Domains
 {
     public partial class Curtida
     {
-
         public Curtida()
         {
+            IdCurtida = Guid.NewGuid();
         }
         public Guid IdCurtida { get; set; }
         public Guid IdUsuario { get; set; }
