@@ -13,6 +13,11 @@ namespace Projeto_EduXSprint2.Repositories {
             _context = new EduXContext();
         }
 
+
+        /// <summary>
+        /// Criando metodo para adicionar dados no banco
+        /// </summary>
+        /// <param name="turma"></param>
         public void Adicionar(Turma turma) {
             try {
                 _context.Turma.Add(turma);
@@ -24,6 +29,11 @@ namespace Projeto_EduXSprint2.Repositories {
             }
         }
 
+        /// <summary>
+        /// Criando metodo para procurar um id especifico no banco de dados
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Turma BuscarPorId(Guid id) {
             try {
                 return _context.Turma.Find(id);
@@ -33,15 +43,11 @@ namespace Projeto_EduXSprint2.Repositories {
             }
         }
 
-        public List<Turma> BuscarPorNome(string nome) {
-            try {
-                return _context.Turma.Where(c => c.Descricao.Contains(nome)).ToList();
-            }
-            catch (Exception ex) {
-                throw new Exception(ex.Message);
-            }
-        }
-
+        /// <summary>
+        /// Criando método para Editar dados
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="turma"></param>
         public void Editar(Guid id , Turma turma) {
             try {
                 Turma turmaTemp = BuscarPorId(id);
@@ -62,6 +68,10 @@ namespace Projeto_EduXSprint2.Repositories {
             }
         }
 
+        /// <summary>
+        /// Lista de dados
+        /// </summary>
+        /// <returns></returns>
         public List<Turma> Listar() {
             try {
                 return _context.Turma.ToList();
@@ -71,6 +81,10 @@ namespace Projeto_EduXSprint2.Repositories {
             }
         }
 
+        /// <summary>
+        /// Removendo algo do banco de dados
+        /// </summary>
+        /// <param name="id"></param>
         public void Remover(Guid id) {
             try {
                 Turma turmaTemp = BuscarPorId(id);

@@ -13,6 +13,11 @@ namespace Projeto_EduXSprint2.Controllers {
             _alunoturmaRepository = new AlunoTurmaRepository();
         }
 
+        /// <summary>
+        /// Olhar Lista do Banco de dados
+        /// </summary>
+        /// <returns></returns>
+        //Fazendo o Get
         [HttpGet]
         public IActionResult Get() {
             try {
@@ -31,6 +36,12 @@ namespace Projeto_EduXSprint2.Controllers {
                 return BadRequest(ex.Message);
             }
         }
+
+        /// <summary>
+        /// Buscar por um id do Banco de dados
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public IActionResult Get(Guid id) {
             try {
@@ -48,6 +59,12 @@ namespace Projeto_EduXSprint2.Controllers {
             }
         }
 
+        /// <summary>
+        /// Postar algo no banco
+        /// </summary>
+        /// <param name="alunoturma"></param>
+        /// <returns></returns>
+        //fazendo Post
         [HttpPost]
         public IActionResult Post([FromForm] AlunoTurma alunoturma) {
             try {
@@ -61,6 +78,13 @@ namespace Projeto_EduXSprint2.Controllers {
             }
         }
 
+        /// <summary>
+        /// Alterar algo nos dados
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="alunoturma"></param>
+        /// <returns></returns>
+        //Fazendo o Put
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, AlunoTurma alunoturma) {
             try {
@@ -72,6 +96,12 @@ namespace Projeto_EduXSprint2.Controllers {
                 return BadRequest(ex.Message);
             }
         }
+        /// <summary>
+        /// Deletar algo no Banco
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        //Deletar algo no banco
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id) {
             try {
