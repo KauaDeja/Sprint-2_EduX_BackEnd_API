@@ -20,9 +20,9 @@ namespace Projeto_EduXSprint2.Controllers
             _curtidaRepository = new CurtidaRepository();
         }
         /// <summary>
-        /// Lista todos os cursos cadastrados
+        /// Lista todas as Curtida cadastradas
         /// </summary>
-        /// <returns>Retorna a lista de cursos</returns>
+        /// <returns>Retorna a lista de todas as curtidas </returns>
         [HttpGet]
         public IActionResult Get()
         {
@@ -41,6 +41,11 @@ namespace Projeto_EduXSprint2.Controllers
 
             }
         }
+        /// <summary>
+        /// Busca a Curtida por Id
+        /// </summary>
+        /// <param name="id"> Id da Curtida</param>
+        /// <returns> Retorna Curtida buscada </returns>
         [HttpGet("{id}")]
         public ActionResult Get(Guid id)
         {
@@ -63,6 +68,12 @@ namespace Projeto_EduXSprint2.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        /// <summary>
+        /// Cadastra uma Curtida
+        /// </summary>
+        /// <param name="curtida"> Objeto do tipo Curtida</param>
+        /// <returns> Retorna Curtida cadastrada </returns>
         [HttpPost]
         public IActionResult Post([FromForm] Curtida curtida)// passou como parametro um formulario
         {
@@ -81,6 +92,12 @@ namespace Projeto_EduXSprint2.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        /// <summary>
+        /// Altera uma Curtida
+        /// </summary>
+        /// <param name="id"> Id da Curtida</param>
+        /// <param name="curtida"> Objeto do tipo Curtida</param>
+        /// <returns> Retorna Id da Curtida </returns>
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, Curtida curtida)
         {
@@ -102,6 +119,11 @@ namespace Projeto_EduXSprint2.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        /// <summary>
+        /// Deleta uma Curtida
+        /// </summary>
+        /// <param name="id"> Id da Curtida</param>
+        /// <returns> Retorna Curtida deletada </returns>
         [HttpDelete("{id}")]
         public IActionResult Remover(Guid id)
         {

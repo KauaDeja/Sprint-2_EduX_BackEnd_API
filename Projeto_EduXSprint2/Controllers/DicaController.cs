@@ -21,7 +21,7 @@ namespace Projeto_EduXSprint2.Controllers
             _dicaRepository = new DicaRepository();
         }
         /// <summary>
-        /// Lista todos os cursos cadastrados
+        /// Lista todos as Dicas cadastrados
         /// </summary>
         /// <returns>Retorna a lista de cursos</returns>
         [HttpGet]
@@ -42,6 +42,11 @@ namespace Projeto_EduXSprint2.Controllers
 
             }
         }
+        /// <summary>
+        /// Busca uma Dica
+        /// </summary>
+        /// <param name="id"> Id da Dica</param>
+        /// <returns> retorna a Dica cadastrada</returns>
         [HttpGet("{id}")]
         public ActionResult Get(Guid id)
         {
@@ -64,6 +69,11 @@ namespace Projeto_EduXSprint2.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        /// <summary>
+        /// Cadastra uma Dica(imagem)
+        /// </summary>
+        /// <param name="dica"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Post([FromForm] Dica dica)// passou como parametro um formulario
         {
@@ -102,6 +112,12 @@ namespace Projeto_EduXSprint2.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        /// <summary>
+        /// Edita uma Dica
+        /// </summary>
+        /// <param name="id"> Id da Dica</param>
+        /// <param name="dica"> Objeto da Dica</param>
+        /// <returns> Retorna Dica editada </returns>
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, Dica dica)
         {
@@ -123,6 +139,12 @@ namespace Projeto_EduXSprint2.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        /// <summary>
+        /// Remove uma Dica
+        /// </summary>
+        /// <param name="id"> Id da Dica</param>
+        /// <returns> Retorna Id da Dica removida</returns>
         [HttpDelete("{id}")]
         public IActionResult Remover(Guid id)
         {
