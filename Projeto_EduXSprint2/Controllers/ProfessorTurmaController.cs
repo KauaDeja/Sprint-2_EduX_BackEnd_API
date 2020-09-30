@@ -79,7 +79,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// <param name="professorTurma">Objeto do tipo ProfessorTurma</param>
         /// <returns>Retorna o professor cadastrado</returns>
         [HttpPost]
-        public IActionResult Post([FromForm] ProfessorTurma professorTurma)// passou como parametro um formulario
+        public IActionResult Post([FromBody] ProfessorTurma professorTurma)// passou como parametro um formulario
         {
             try
             {
