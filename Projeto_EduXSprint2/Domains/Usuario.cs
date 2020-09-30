@@ -12,6 +12,10 @@ namespace Projeto_EduXSprint2.Domains
             Curtida = new HashSet<Curtida>();
             Dica = new HashSet<Dica>();
             ProfessorTurma = new HashSet<ProfessorTurma>();
+<<<<<<< HEAD
+=======
+            IdUsuario = Guid.NewGuid();
+>>>>>>> 58901c01bfdd9c77c5cc47609c125d6a3789230b
         }
 
         public Guid IdUsuario { get; set; }
