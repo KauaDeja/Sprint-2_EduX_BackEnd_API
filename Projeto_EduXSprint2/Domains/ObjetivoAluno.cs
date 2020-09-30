@@ -4,18 +4,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Projeto_EduXSprint2.Domains
 {
-    public partial class ObjetivoAluno
-    {
-<<<<<<< HEAD
-       
+    public partial class ObjetivoAluno {        
         public ObjetivoAluno()
         {
             IdObjetivoAluno = Guid.NewGuid();
             DataAlcancado = DateTime.Now;
-=======
-        public ObjetivoAluno()
-        {
->>>>>>> 13736be80c8b2c4180a7339713c8164335ef1281
         }
         public Guid IdObjetivoAluno { get; set; }
 
