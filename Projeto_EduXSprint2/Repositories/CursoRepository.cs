@@ -143,6 +143,7 @@ namespace Projeto_EduXSprint2.Repositories
         /// </summary>
         /// <param name="id"></param>
         /// <param name="curso"></param>
+        /// 
         public void Alterar(Guid id,Curso curso)
         {
             try
