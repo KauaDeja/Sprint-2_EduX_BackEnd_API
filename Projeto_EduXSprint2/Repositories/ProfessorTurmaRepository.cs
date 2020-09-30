@@ -37,35 +37,32 @@ namespace Projeto_EduXSprint2.Repositories
                 throw new Exception(ex.Message);
             }
         }
-        /// <summary>
-        /// Altera um professor da turma
-        /// </summary>
-        /// <param name="professorturma">Objeto do tipo ProfessorTurma</param>
-        public void Alterar(ProfessorTurma professorturma)
+       /// <summary>
+       /// Altera um professor
+       /// </summary>
+       /// <param name="id">id do prefossor</param>
+       /// <param name="professorturma">Objeto do tipo professor</param>
+        public void Alterar(Guid id, ProfessorTurma professorturma)
         {
             try
             {
-                // Busca um professorturma
-                ProfessorTurma professorTemp = BuscarPorId(professorturma.IdProfessorTurma);
+                ProfessorTurma professorTemp = BuscarPorId(id);
 
-                // Faz uma tratativa para ver se existe
                 if (professorTemp == null)
-                {
-                    throw new Exception("Essa Turma não foi encontrada. Tente novamente");
-
-                }
-
-                professorTemp.Descricao = professorTemp.Descricao;
+                    throw new Exception("Professor não encontrada");
 
 
-                //Altera a turma no contexto
+                professorTemp.IdProfessorTurma  = professorturma.IdProfessorTurma;
+                professorTemp.IdUsuario = professorturma.IdUsuario;
+                professorTemp.Descricao = professorturma.Descricao;
+
+
+
                 cont.ProfessorTurma.Update(professorTemp);
-                // Salva as alteraçõe no contexto
                 cont.SaveChanges();
             }
             catch (Exception ex)
             {
-
                 throw new Exception(ex.Message);
             }
         }

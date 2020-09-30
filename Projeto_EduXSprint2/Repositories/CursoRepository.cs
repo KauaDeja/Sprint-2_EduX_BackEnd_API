@@ -139,33 +139,30 @@ namespace Projeto_EduXSprint2.Repositories
             }
         }
         /// <summary>
-        /// Altera um Curso
+        /// Altera um curso
         /// </summary>
-        /// <param name="curso">O objeto do tipo Curso</param>
-        public void Alterar(Curso curso)
+        /// <param name="id"></param>
+        /// <param name="curso"></param>
+        public void Alterar(Guid id,Curso curso)
         {
             try
             {
-                // Curso pcursoTemp = cont.Curso.Find(curso.Id);
-                // Buscar curso pelo ID
-                Curso cursoTemp = BuscarPorId(curso.IdCurso);
+                Curso cursoTemp = BuscarPorId(id);
 
-                // verifica se o curso existe
-                // Caso não gera um ex
                 if (cursoTemp == null)
-                    throw new Exception("Produto não encontrado");
+                    throw new Exception("Curso não encontrada");
 
-                // Caso exista altera
-                cursoTemp.Titulo = curso.Titulo;
 
-                // Altera os produtos no context
+                cursoTemp.IdCurso       =  curso.IdCurso;
+                cursoTemp.IdInstituicao =  curso.IdInstituicao;
+                cursoTemp.Titulo        =  curso.Titulo;
+
+
                 _context.Curso.Update(cursoTemp);
-                //Salva o contexto
                 _context.SaveChanges();
             }
             catch (Exception ex)
             {
-
                 throw new Exception(ex.Message);
             }
         }

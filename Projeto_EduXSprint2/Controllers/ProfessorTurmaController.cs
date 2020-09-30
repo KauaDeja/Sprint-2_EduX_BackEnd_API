@@ -108,11 +108,7 @@ namespace Projeto_EduXSprint2.Controllers
             try
             {
                 //certamente se ele passou pelo buscar Id ele existe
-                var professorTemp = _professorTurmaRepository.BuscarPorId(id);
-
-                // fAZ A verificação do professor
-                if (professorTemp == null)
-                    return NotFound();
+                _professorTurmaRepository.Alterar(id, professorTurma);
 
                 // retorna ok com os dados do professor alterado
                 return Ok(professorTurma);

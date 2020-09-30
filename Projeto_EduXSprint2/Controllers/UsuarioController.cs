@@ -153,11 +153,7 @@ namespace Projeto_EduXSprint2.Controllers
             try
             {
                 //certamente se ele passou pelo buscar Id ele existe
-                var usuarioTemp = _usuarioRepository.BuscarPorId(id);
-
-                // fAZ A verificação do usuario
-                if (usuarioTemp == null)
-                    return NotFound();
+                _usuarioRepository.Alterar(id, usuario);
 
                 // retorna ok com os dados do usuario alterado
                 return Ok(usuario);

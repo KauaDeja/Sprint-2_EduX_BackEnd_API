@@ -14,7 +14,7 @@ namespace Projeto_EduXSprint2.Interfaces
         ProfessorTurma BuscarPorId(Guid id);
         void Cadastrar(ProfessorTurma professorturma);
 
-        void Alterar(ProfessorTurma professorturma);
+        void Alterar(Guid id, ProfessorTurma professorturma);
 
         void Excluir(Guid id);
     }

@@ -138,34 +138,32 @@ namespace Projeto_EduXSprint2.Repositories
             }
         }
         /// <summary>
-        /// AlTera um usuario
+        /// Altera um usuario
         /// </summary>
-        /// <param name="usuario">O objeto do tipo Usuario</param>
-        public void Alterar(Usuario usuario)
+        /// <param name="id">id do usuario</param>
+        /// <param name="usuario">Objeto do tipo usuario</param>
+        public void Alterar(Guid id, Usuario usuario)
         {
             try
             {
-                // Buscar usuario pelo ID
-                Usuario usuarioTemp = BuscarPorId(usuario.IdUsuario);
+                Usuario usuarioTemp = BuscarPorId(id);
 
-                // verifica se o usuario existe
-                // Caso não gera um ex
                 if (usuarioTemp == null)
-                    throw new Exception("Usuario não encontrado");
+                    throw new Exception("Usuario não encontrada");
 
-                // Caso exista altera
                 usuarioTemp.Nome = usuario.Nome;
-                usuarioTemp.Email = usuario.Email;
                 usuarioTemp.Senha = usuario.Senha;
+                usuarioTemp.Email = usuario.Email;
+                usuarioTemp.DataCadastro = usuario.DataCadastro;
+                usuarioTemp.DataUltimoAcesso = usuario.DataUltimoAcesso;
+                usuarioTemp.IdPerfil = usuario.IdPerfil;
 
-                // Altera os usuarios no context
+
                 _context.Usuario.Update(usuarioTemp);
-                //Salva o contexto
                 _context.SaveChanges();
             }
             catch (Exception ex)
             {
-
                 throw new Exception(ex.Message);
             }
         }

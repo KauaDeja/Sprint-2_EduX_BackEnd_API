@@ -18,7 +18,7 @@ namespace Projeto_EduXSprint2.Interfaces
 
         void Cadastrar(Usuario usuario);
 
-        void Alterar(Usuario usuario);
+        void Alterar(Guid id, Usuario usuario);
 
         void Excluir(Guid id);
     }

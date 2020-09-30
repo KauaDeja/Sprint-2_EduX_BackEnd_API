@@ -140,11 +140,7 @@ namespace Projeto_EduXSprint2.Controllers
             try
             {
                 //certamente se ele passou pelo buscar Id ele existe
-                var cursoTemp = _cursoRepository.BuscarPorId(id);
-
-                // fAZ A verificação do curso
-                if (cursoTemp == null)
-                    return NotFound();
+                _cursoRepository.Alterar(id, curso);
 
                 // retorna ok com os dados do curso alterado
                 return Ok(curso);
