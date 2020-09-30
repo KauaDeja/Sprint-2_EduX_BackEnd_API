@@ -6,18 +6,10 @@ namespace Projeto_EduXSprint2.Domains
 {
     public partial class Objetivo
     {
-<<<<<<< HEAD
-       
         public Objetivo()
         {
             ObjetivoAluno = new HashSet<ObjetivoAluno>();
             IdObjetivo = Guid.NewGuid();
-
-=======
-        public Objetivo()
-        {
-            ObjetivoAluno = new HashSet<ObjetivoAluno>();
->>>>>>> 58901c01bfdd9c77c5cc47609c125d6a3789230b
         }
 
         public Guid IdObjetivo { get; set; }

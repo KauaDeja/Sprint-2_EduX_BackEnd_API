@@ -9,13 +9,10 @@
 	</PropertyGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
     <Folder Include="Utills\" />
   </ItemGroup>
 
   <ItemGroup>
-=======
->>>>>>> 58901c01bfdd9c77c5cc47609c125d6a3789230b
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.8">
