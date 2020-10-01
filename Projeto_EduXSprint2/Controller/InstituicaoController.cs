@@ -114,7 +114,7 @@ namespace Projeto_EduXSprint2.Controller
         /// 
         // POST api/<PerfilController>
         [HttpPost]
-        public IActionResult Post([FromForm] Instituicao instituicao)
+        public IActionResult Post([FromBody] Instituicao instituicao)
         {
             try
             {

@@ -71,7 +71,7 @@ namespace Projeto_EduXSprint2.Controller
         }
 
         /// <summary>
-        /// Faz a busca através dos Ids das categorias
+        /// Faz a busca através dos tipos de categoria
         /// </summary>
         /// <param name="tipo"></param>
         /// <returns></returns>
@@ -104,7 +104,7 @@ namespace Projeto_EduXSprint2.Controller
         /// <returns></returns>
         // POST api/<PerfilController>
         [HttpPost]
-        public IActionResult Post([FromForm] Categoria categoria)
+        public IActionResult Post([FromBody] Categoria categoria)
         {
             try
             {

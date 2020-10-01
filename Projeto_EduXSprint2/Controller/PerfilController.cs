@@ -24,7 +24,7 @@ namespace Projeto_EduXSprint2.Controller
         }
 
         /// <summary>
-        /// Cadastra os Perfis
+        /// Lista os Perfis
         /// </summary>
         /// <returns></returns>
 
@@ -73,6 +73,11 @@ namespace Projeto_EduXSprint2.Controller
             }
         }
 
+        /// <summary>
+        /// Faz a busca através da permissão da pessoa
+        /// </summary>
+        /// <param name="permissao"></param>
+        /// <returns></returns>
 
         [HttpGet("permissao/{permissao}")]
         public IActionResult Get(string permissao)
@@ -101,7 +106,7 @@ namespace Projeto_EduXSprint2.Controller
 
         // POST api/<PerfilController>
         [HttpPost]
-        public IActionResult Post([FromForm] Perfil perfil)
+        public IActionResult Post([FromBody] Perfil perfil)
         {
             try
             {
