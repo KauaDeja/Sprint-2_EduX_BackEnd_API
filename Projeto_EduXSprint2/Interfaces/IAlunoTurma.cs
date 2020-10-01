@@ -6,6 +6,7 @@ namespace Projeto_EduXSprint2.Interfaces {
     interface IAlunoTurma {
         List<AlunoTurma> Listar();
         AlunoTurma BuscarPorId(Guid id);
+        List<AlunoTurma> BuscarPorMatricula(string matricula);
         void Adicionar(AlunoTurma alunoturma);
         void Editar(AlunoTurma alunoturma);
         void Remover(Guid id);

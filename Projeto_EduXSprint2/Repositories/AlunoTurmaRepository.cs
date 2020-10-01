@@ -31,6 +31,17 @@ namespace Projeto_EduXSprint2.Repositories {
                 throw new Exception(ex.Message);
             }
         }
+        public List<AlunoTurma> BuscarPorMatricula(string matricula)
+        {
+            try
+            {
+                return _context.AlunoTurma.Where(p => p.Matricula.Contains(matricula)).ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
 
         public void Editar(AlunoTurma alunoturma) {
             try { 

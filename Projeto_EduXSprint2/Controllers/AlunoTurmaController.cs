@@ -58,6 +58,28 @@ namespace Projeto_EduXSprint2.Controllers {
                 return BadRequest(ex.Message);
             }
         }
+        /// <summary>
+        /// Busca o aluno pelo número de Matricula
+        /// </summary>
+        /// <param name="matricula"></param>
+        /// <returns></returns>
+        [HttpGet("matricula/{matricula}")]
+        public IActionResult Get(string matricula)
+        {
+            try
+            {
+                var alunoturma = _alunoturmaRepository.BuscarPorMatricula(matricula);
+
+                if (alunoturma == null)
+                    return NotFound();
+
+                return Ok(alunoturma);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
         /// <summary>
         /// Postar algo no banco
