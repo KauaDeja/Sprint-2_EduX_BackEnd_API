@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Projeto_EduXSprint2.Domains;
 using Projeto_EduXSprint2.Interfaces;
@@ -26,6 +27,7 @@ namespace Projeto_EduXSprint2.Controller
         /// </summary>
         /// <returns></returns>
         // GET: api/<PerfilController>
+        [Authorize]
         [HttpGet]
 
         public IActionResult Get()
@@ -53,6 +55,7 @@ namespace Projeto_EduXSprint2.Controller
         /// <returns></returns>
 
         // GET api/<PerfilController>/5
+        [Authorize(Roles = "Professor")]
         [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {
@@ -87,6 +90,7 @@ namespace Projeto_EduXSprint2.Controller
         /// <returns></returns>
 
         // GET api/<PerfilController>/5
+        [Authorize]
         [HttpGet("Nome, Logradouro, Numero, Complemento, Bairro, cidade, Uf, Cep/{Nome, Logradouro, Numero, Complemento, Bairro, cidade, Uf, Cep}")]
         public IActionResult Get(string Nome, string Logradouro, string Numero, string Complemento, string Bairro, string cidade, string Uf, string Cep)
         {
@@ -113,6 +117,7 @@ namespace Projeto_EduXSprint2.Controller
         /// <returns></returns>
         /// 
         // POST api/<PerfilController>
+        [Authorize(Roles = "Instituicao")]
         [HttpPost]
         public IActionResult Post([FromBody] Instituicao instituicao)
         {
@@ -135,6 +140,7 @@ namespace Projeto_EduXSprint2.Controller
         /// <returns></returns>
         /// 
         // PUT api/<PerfilController>/5
+        [Authorize(Roles = "Instituicao")]
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, Instituicao instituicao)
         {
@@ -159,6 +165,7 @@ namespace Projeto_EduXSprint2.Controller
         /// <returns></returns>
         /// 
         // DELETE api/<PerfilController>/5
+        [Authorize(Roles = "Instituicao")]
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {

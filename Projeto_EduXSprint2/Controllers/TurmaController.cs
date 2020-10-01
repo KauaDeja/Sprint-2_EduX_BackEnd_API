@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Projeto_EduXSprint2.Domains;
 using Projeto_EduXSprint2.Repositories;
@@ -17,6 +18,7 @@ namespace Projeto_EduXSprint2.Controllers {
         /// </summary>
         /// <returns></returns>
         //Fazendo o Get
+        [Authorize]
         [HttpGet]
         public IActionResult Get() {
             try {
@@ -35,13 +37,13 @@ namespace Projeto_EduXSprint2.Controllers {
                 return BadRequest(ex.Message);
             }
         }
-        
+
         /// <summary>
         /// Buscar por um id do Banco de dados
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-
+        [Authorize(Roles = "Professor, Instituicao")]
         // Fazendo Get
         [HttpGet("{id}")]
         public IActionResult Get(Guid id) {
@@ -62,11 +64,12 @@ namespace Projeto_EduXSprint2.Controllers {
 
 
         /// <summary>
-        /// Postar algo no banco
+        /// Cadastra uma turma
         /// </summary>
-        /// <param name="turma"></param>
-        /// <returns></returns>
+        /// <param name="turma">Objeto do tipo Turma</param>
+        /// <returns>Retorna a turma cadastrada</returns>
         //fazendo Post
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpPost]
         public IActionResult Post([FromBody] Turma turma) {
             try {
@@ -81,13 +84,15 @@ namespace Projeto_EduXSprint2.Controllers {
         }
 
         /// <summary>
-        /// Alterar algo nos dados
+        /// Alterar Turma
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="turma"></param>
-        /// <returns></returns>
+        /// <param name="id">Id da turma </param>
+        /// <param name="turma">Objeto do tipo Turma</param>
+        /// <returns>Retorna a turma alterada</returns>
         //Fazendo o Put
+
         [HttpPut("{id}")]
+        [Authorize(Roles = "Professor, Instituicao")]
         public IActionResult Put(Guid id, Turma turma) {
             try {
                 _turmaRepository.Editar(id, turma);
@@ -104,6 +109,7 @@ namespace Projeto_EduXSprint2.Controllers {
         /// <param name="id"></param>
         /// <returns></returns>
         //Fazendo Delete
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id) {
             try {

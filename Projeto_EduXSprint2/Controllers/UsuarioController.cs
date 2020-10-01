@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Projeto_EduXSprint2.Domains;
@@ -25,6 +26,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// Lista todos os usuarios cadastrados
         /// </summary>
         /// <returns>Retorna uma lista de usuarios</returns>
+        [Authorize]
         [HttpGet]
         public IActionResult Get() // IActionResult vou retornar resultado da minha ação
         {
@@ -63,6 +65,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="id">id do usuario</param>
         /// <returns>Retorna o usuario buscado</returns>
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {
@@ -90,6 +93,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="nome">string do nome</param>
         /// <returns>Retorna o usuario buscado</returns>
+        [Authorize]
         [HttpGet("nome/{nome}")]
         public IActionResult Get(string nome)
         {
@@ -121,12 +125,13 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="usuario">Objeto do tipo usuario</param>
         /// <returns>Retorna o usuario cadastrado</returns>
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpPost]
         public IActionResult Post([FromBody] Usuario usuario)// passou como parametro um formulario
         {
             try
             {
-                //usuario.Senha = Crypto.Criptografar(usuario.Senha, usuario.Email.Substring(0, 4));
+                usuario.Senha = Crypto.Criptografar(usuario.Senha, usuario.Email.Substring(0, 4));
 
                 // Adiciona um usuario
                 _usuarioRepository.Cadastrar(usuario);
@@ -147,11 +152,14 @@ namespace Projeto_EduXSprint2.Controllers
         /// <param name="id">id do usuario</param>
         /// <param name="usuario">Objeto do tipo usuario</param>
         /// <returns>Retorna o usuario alterado</returns>
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpPut("{id}")]
         public IActionResult Put( Guid id, Usuario usuario)
         {
             try
             {
+                usuario.Senha = Crypto.Criptografar(usuario.Senha, usuario.Email.Substring(0, 4));
+
                 //certamente se ele passou pelo buscar Id ele existe
                 _usuarioRepository.Alterar(id, usuario);
 
@@ -169,6 +177,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="id">Id do usuario</param>
         /// <returns>Retorna o usuario excluido</returns>
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {

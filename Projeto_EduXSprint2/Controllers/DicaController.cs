@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Projeto_EduXSprint2.Domains;
@@ -24,6 +25,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// Lista todos as Dicas cadastrados
         /// </summary>
         /// <returns>Retorna a lista de cursos</returns>
+        [Authorize]
         [HttpGet]
         public IActionResult Get()
         {
@@ -47,6 +49,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="id"> Id da Dica</param>
         /// <returns> retorna a Dica cadastrada</returns>
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpGet("{id}")]
         public ActionResult Get(Guid id)
         {
@@ -74,6 +77,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="dica"></param>
         /// <returns></returns>
+        [Authorize]
         [HttpPost]
         public IActionResult Post([FromBody] Dica dica)// passou como parametro um formulario
         {
@@ -118,6 +122,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// <param name="id"> Id da Dica</param>
         /// <param name="dica"> Objeto da Dica</param>
         /// <returns> Retorna Dica editada </returns>
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, Dica dica)
         {
@@ -145,6 +150,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="id"> Id da Dica</param>
         /// <returns> Retorna Id da Dica removida</returns>
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpDelete("{id}")]
         public IActionResult Remover(Guid id)
         {

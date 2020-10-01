@@ -75,15 +75,14 @@ namespace EduX_Projeto.Controllers
         /// Método que gera o token para login e a criptografia
         /// </summary>
         /// <param name="login">login do usuario</param>
-        /// <returns>Retorna a resposta</returns>
+        /// <returns>Retorna a resposta</returns> 
+    
+        // Usamos a anotação "AllowAnonymous" para 
+        // ignorar a autenticação neste método, já que é ele quem fará isso
         [AllowAnonymous]
         [HttpPost]
         public IActionResult Login([FromBody] Usuario login)
         {
-
-            // Criptografamos antes de consultar com o banco
-            login.Senha = Crypto.Criptografar(login.Senha, login.Email.Substring(0, 4));
-
             // Definimos logo de cara como não autorizado
             IActionResult response = Unauthorized();
 

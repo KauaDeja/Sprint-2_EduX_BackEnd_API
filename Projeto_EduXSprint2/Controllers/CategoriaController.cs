@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Projeto_EduXSprint2.Domains;
 using Projeto_EduXSprint2.Interfaces;
@@ -27,6 +28,7 @@ namespace Projeto_EduXSprint2.Controller
         /// </summary>
         /// <returns></returns>
         // GET: api/<PerfilController>
+        [Authorize]
         [HttpGet]
         public IActionResult Get()
         {
@@ -77,6 +79,7 @@ namespace Projeto_EduXSprint2.Controller
         /// <returns></returns>
         /// 
         // GET api/<PerfilController>/5
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpGet("tipo/{tipo}")]
         public IActionResult Get(string tipo)
         {
@@ -103,6 +106,7 @@ namespace Projeto_EduXSprint2.Controller
         /// 
         /// <returns></returns>
         // POST api/<PerfilController>
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpPost]
         public IActionResult Post([FromBody] Categoria categoria)
         {
@@ -126,6 +130,7 @@ namespace Projeto_EduXSprint2.Controller
         /// 
         /// <returns></returns>
         // PUT api/<PerfilController>/5
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, Categoria categoria)
         {
@@ -149,6 +154,7 @@ namespace Projeto_EduXSprint2.Controller
         /// <returns></returns>
         /// 
         // DELETE api/<PerfilController>/5
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {

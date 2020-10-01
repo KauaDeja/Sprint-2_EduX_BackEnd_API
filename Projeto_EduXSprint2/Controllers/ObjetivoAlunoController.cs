@@ -27,6 +27,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// Lista todas informações cadastradas em ObjetivoAluno
         /// </summary>
         /// <returns>ObjetivoAluno cadastrado</returns>
+        [Authorize]
         [HttpGet]
 
         public IActionResult Get()
@@ -55,6 +56,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="id"> id do ObjetivoAluno desejado</param>
         /// <returns>ObjetivoAluno correspondente</returns>
+        [Authorize]
         [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {
@@ -82,7 +84,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// Cadastra novos itens em ObjetivoAluno, no banco de dados
         /// </summary>
         /// <returns>ObjetivoAluno adicionado</returns>
-        [Authorize]
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpPost]
         public IActionResult Post([FromBody] ObjetivoAluno objetivoAl)
         {
@@ -97,7 +99,7 @@ namespace Projeto_EduXSprint2.Controllers
             }
         }
         #endregion
-        
+
         #region Put
         /// <summary>
         /// Edita um ObjetivoAluno cadastrado , inserindo novas informações, depois salva alterações
@@ -105,7 +107,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// <param name="id">Id do ObjetivoAluno cadastrado</param>
         /// <param name="objetivoAl">Novo ObjetivoAluno a ser inserido</param>
         /// <returns></returns>
-        [Authorize]
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, [FromBody] ObjetivoAluno objetivoAl)
         {
@@ -129,7 +131,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="id">Id do ObjetivoAluno que será deletado</param>
         /// <returns></returns>
-        [Authorize]
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {

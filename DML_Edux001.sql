@@ -15,6 +15,7 @@ SELECT * FROM ObjetivoAluno
 INSERT INTO Perfil (IdPerfil,Permissao)
 	VALUES
 	(NEWID(),'Professor'),
+	(NEWID(),'Instituicao'),
 	(NEWID(),'Aluno');
 
 INSERT INTO Categoria (	IdCategoria,Tipo)

@@ -27,6 +27,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// Lista todos os objetivos cadastrados
         /// </summary>
         /// <returns>Objetivos Cadastrados</returns>
+        [Authorize]
         [HttpGet]
        
         public IActionResult Get()
@@ -55,6 +56,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="id"> id do objetivo desejado</param>
         /// <returns>Objetivo correspondente</returns>
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Projeto_EduXSprint2.Domains;
@@ -23,6 +24,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// Lista todos os cursos cadastrados
         /// </summary>
         /// <returns>Retorna a lista de cursos</returns>
+        [Authorize]
         [HttpGet]
         public IActionResult Get()
         {
@@ -50,6 +52,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="id">id do curso</param>
         /// <returns>Retorna o curso buscado</returns>
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {
@@ -72,12 +75,13 @@ namespace Projeto_EduXSprint2.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        
+
         /// <summary>
         /// Busca um curso pelo seu titulo
         /// </summary>
         /// <param name="titulo">Titulo do curso</param>
         /// <returns>Retorna o curso buscado</returns>
+        [Authorize]
         [HttpGet("titulo/{titulo}")]
         public IActionResult Get(string titulo)
         {
@@ -109,6 +113,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="curso">Objeto do tipo curso</param>
         /// <returns>Retorna o curso cadastrado</returns>
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpPost]
         public IActionResult Post([FromBody] Curso curso)// passou como parametro um formulario
         {
@@ -134,7 +139,9 @@ namespace Projeto_EduXSprint2.Controllers
         /// <param name="id">Id do curso</param>
         /// <param name="curso">Objeto do tipo  curso</param>
         /// <returns></returns>
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpPut("{id}")]
+
         public IActionResult Put(Guid id, Curso curso)
         {
             try
@@ -157,6 +164,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// </summary>
         /// <param name="id">id do curso</param>
         /// <returns>Retorna o curso deletado</returns>
+        [Authorize(Roles = "Professor, Instituicao")]
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {
