@@ -126,7 +126,8 @@ namespace Projeto_EduXSprint2.Controllers
         {
             try
             {
-                //usuario.Senha = Crypto.Criptografar(usuario.Senha, usuario.Email.Substring(0, 4));
+                // Criptografamos antes de salvar a senha
+                usuario.Senha = Crypto.Criptografar(usuario.Senha, usuario.Email.Substring(0, 4));
 
                 // Adiciona um usuario
                 _usuarioRepository.Cadastrar(usuario);

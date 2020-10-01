@@ -88,7 +88,7 @@ namespace Projeto_EduXSprint2.Repositories
         /// Aqui cadastramos o curso
         /// </summary>
         /// <param name="curso">Objeto do tipo Curso</param>
-        public void Cadastrar(Curso curso)
+        public void Adicionar(Curso curso)
         {
             // try - tente
             // catch - excessão
