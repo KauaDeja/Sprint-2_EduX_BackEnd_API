@@ -1,0 +1,1620 @@
+{
+	"id": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+	"name": "EduXPRINCIPAL",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [],
+	"folders_order": [
+		"3188da62-27fe-4587-a9ab-95b8ccfb0a36",
+		"1922989c-a512-4277-914d-2d0478c9ba1c",
+		"9e531a14-b696-4fd4-8668-92c902404134",
+		"c9f8be7f-4c2c-4258-9856-1cb5c83274a0",
+		"a8c1c50a-8b99-467b-8f65-7568e6be4252",
+		"3ab9ae44-7db6-415f-9252-e193f3413972",
+		"e748bb3c-94a5-4eea-9967-84fd8a4c8c14",
+		"2c987af4-d5ab-4d16-abd1-e2701f634617",
+		"5dff8953-69b9-4702-bee2-bb6c32899455",
+		"c2926090-6e04-41de-a340-5e8f60577ba6",
+		"d929d94c-12d7-40ff-8413-45c89a82a45b",
+		"fc68d488-ec28-4d20-892b-73621d0528b3",
+		"d1787b26-1987-4ef8-be6f-81d75dbd7450"
+	],
+	"protocolProfileBehavior": {},
+	"folders": [
+		{
+			"id": "5dff8953-69b9-4702-bee2-bb6c32899455",
+			"name": "AlunoTurma",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+			"folder": null,
+			"order": [
+				"3d0ffdc3-ff2d-4028-9f52-03e6511bc0f4",
+				"1f31c118-f950-41f4-bfd2-c7333c318e70",
+				"7b53bef9-ddfc-4601-bb82-0f1fe8b483eb",
+				"cef56ad0-68f3-4103-8679-d86256260667"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "e748bb3c-94a5-4eea-9967-84fd8a4c8c14",
+			"name": "Categoria",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+			"folder": null,
+			"order": [
+				"08d0ebc2-97bb-431a-947f-fa4c398465f6",
+				"e376fdc8-9d4f-47e4-b90b-448b0b93b240",
+				"b2444b76-d48b-46ab-9cb0-9a8bb68d70fb",
+				"9817282f-3093-4b84-aea4-b2d3c57954e9",
+				"270d5807-2255-4978-8e4c-5d88f27fdc0c"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "9e531a14-b696-4fd4-8668-92c902404134",
+			"name": "Curso",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+			"folder": null,
+			"order": [
+				"fe1d4148-e0fe-4d17-be5e-1fb8d11417e4",
+				"30a7b602-bb8e-4d32-b7dc-502a4d663dd1",
+				"056a8c28-8e04-413a-a487-3935cc87c6db",
+				"22b7950e-4b0c-49e9-a761-2ec3c4b4012e",
+				"06d2301b-bf88-4fdc-8468-b01f8f143ef8",
+				"586acd65-9147-410c-b0e6-1b2572b7896a"
+			],
+			"folders_order": [
+				"e9712bd3-7d45-4e63-8625-ccb3e550f8da"
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "a8c1c50a-8b99-467b-8f65-7568e6be4252",
+			"name": "Curtida",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+			"folder": null,
+			"order": [
+				"736df16e-9775-4c17-9059-264da1a05856",
+				"7bc86ceb-1e4a-4951-b39b-5c5858c30c95",
+				"b006ac25-3fab-47af-a021-d4f75dc18a6f",
+				"3caa4c7e-9ff7-451d-afa9-5dcf1d021af8"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "2c987af4-d5ab-4d16-abd1-e2701f634617",
+			"name": "Dica",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+			"folder": null,
+			"order": [
+				"e95d423d-c631-4c4e-a727-31575d1a64ee",
+				"07a8d099-5e19-4737-8f74-870a9fd72176"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "3ab9ae44-7db6-415f-9252-e193f3413972",
+			"name": "Instituicao",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+			"folder": null,
+			"order": [
+				"769288b4-e61f-4018-8a31-52fb05701404",
+				"db919af5-4269-42a2-9831-447fa43fafcd",
+				"d28ca49d-3c7d-4551-8336-27bef1b0581b",
+				"8126931b-4f8c-4180-bc39-fbc403bd5e1e"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "3188da62-27fe-4587-a9ab-95b8ccfb0a36",
+			"name": "Login",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+			"folder": null,
+			"order": [
+				"3630b34b-cb83-4abd-85fd-60757060daa5",
+				"0603c403-158a-4655-9d59-adcf8935ec51",
+				"cdf3b071-c284-43bb-a6d9-f6c2738a8aed"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "d1787b26-1987-4ef8-be6f-81d75dbd7450",
+			"name": "Objetivo",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+			"folder": null,
+			"order": [
+				"e2e7d0a1-9e17-4180-9966-a5aaa9c425a7",
+				"658b149f-a56d-4758-a4f7-69f34cbe968e",
+				"26075bf3-099c-447f-be92-e2cdbb91a02e",
+				"8c9df494-ac0d-4012-ae30-2eb12c3458e4",
+				"8c4b8a86-9cc4-4c63-b73d-39d6bf255683"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "fc68d488-ec28-4d20-892b-73621d0528b3",
+			"name": "ObjetivoAluno",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+			"folder": null,
+			"order": [
+				"33e0f44d-3f6d-4b85-8436-d8f610414e1e",
+				"e4c80531-6c00-4254-811b-a74fe40544bd",
+				"abb8787d-bfad-4d57-8f9e-1778dd3c74be",
+				"40b543f7-bb95-4001-9b28-43acd627c87c",
+				"c049fce5-cf75-4bee-a6ea-f6e1740e0cb2"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "d929d94c-12d7-40ff-8413-45c89a82a45b",
+			"name": "Perfil",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+			"folder": null,
+			"order": [
+				"3f2460c9-bfef-4e54-80dd-e97d3d4b179e",
+				"d1c659fa-326a-49eb-b21c-f8d469c38ea7",
+				"36bb6a82-82f2-46a4-8fe0-8da46599a165",
+				"ec0a5fef-04dd-4400-b4bd-5127c873005f",
+				"a296a1e9-d7f1-47ba-acf9-5423343a4ce3"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "e9712bd3-7d45-4e63-8625-ccb3e550f8da",
+			"name": "Perfil",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+			"folder": "9e531a14-b696-4fd4-8668-92c902404134",
+			"order": [
+				"d8f40f1b-3798-4df9-bda3-a544ea420849",
+				"e55a60ef-df81-4f5a-b3ca-f80e1943a6b7",
+				"b85430c0-6b6d-44d4-b3c3-b89fcf0f614b",
+				"70ef7dd5-743f-42f0-bc90-d3e8c0763b9c",
+				"694cea53-15cf-4ffc-ab71-6f8ae4b0896b"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "1922989c-a512-4277-914d-2d0478c9ba1c",
+			"name": "ProfessorTurma",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+			"folder": null,
+			"order": [
+				"3ba1694e-0915-46ca-bca3-724171597b50",
+				"eb7929fa-1e63-494d-b0c4-246f9ed2ab21",
+				"74d1f609-e714-4930-a847-88af63ea7ac3",
+				"72eb7705-a5f4-4294-874b-99b1916e7c29",
+				"67af5789-5c0f-42b6-8656-8320f34a4169"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "c2926090-6e04-41de-a340-5e8f60577ba6",
+			"name": "Turma",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+			"folder": null,
+			"order": [
+				"614bddca-992a-4e50-ab33-683d6ae260ee",
+				"7af6a6d8-1b22-4384-bdda-a0104d0f84a2",
+				"726a2814-e9b3-4156-91a1-03287128f674",
+				"50b8f175-ab90-4177-a374-3e6f35dffb84",
+				"e1094f18-2a64-405a-9e7d-cf2a8876ff06"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"id": "c9f8be7f-4c2c-4258-9856-1cb5c83274a0",
+			"name": "Usuario",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "e20c0d8d-828e-4aa3-b017-5825a65d9ab4",
+			"folder": null,
+			"order": [
+				"1687a379-c3fb-4012-999f-8b54e2944262",
+				"3d5538e9-b539-4f26-bcb3-6330dd74b395",
+				"a3f15c45-886e-4b21-ac18-c781b3b03777",
+				"74996d41-6520-445c-9b32-20730e98f756",
+				"c7c1fee5-62d1-4af8-a0cd-13122431ebf4",
+				"654a4f29-dcbd-4b30-bf7b-12616bb7fd4a"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"requests": [
+		{
+			"id": "056a8c28-8e04-413a-a487-3935cc87c6db",
+			"name": "https://localhost:44305/api/curso",
+			"url": "https://localhost:44305/api/curso",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9e531a14-b696-4fd4-8668-92c902404134",
+			"rawModeData": "{\r\n            \"titulo\": \"Curso de vídeogame\",\r\n            \"idInstituicao\": \"1de3006a-1bca-44b6-a292-046c2f9f66ca\"\r\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "0603c403-158a-4655-9d59-adcf8935ec51",
+			"name": "https://localhost:44305/api/login",
+			"url": "https://localhost:44305/api/login",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "3188da62-27fe-4587-a9ab-95b8ccfb0a36",
+			"rawModeData": "{\r\n    \"email\": \"kaua@gmail.com\",\r\n    \"senha\": \"1234578\"\r\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "06d2301b-bf88-4fdc-8468-b01f8f143ef8",
+			"name": "https://localhost:44305/api/curso",
+			"url": "https://localhost:44305/api/curso/14ff57d4-689e-4451-a143-434e86472aee",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9e531a14-b696-4fd4-8668-92c902404134",
+			"rawModeData": "{\r\n            \"idCurso\": \"14ff57d4-689e-4451-a143-434e86472aee\",\r\n            \"titulo\": \"Curso de informática\",\r\n            \"idInstituicao\": \"1de3006a-1bca-44b6-a292-046c2f9f66ca\"\r\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "07a8d099-5e19-4737-8f74-870a9fd72176",
+			"name": "https://localhost:44305/api/dica",
+			"url": "https://localhost:44305/api/dica",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "2c987af4-d5ab-4d16-abd1-e2701f634617",
+			"pathVariables": {}
+		},
+		{
+			"id": "08d0ebc2-97bb-431a-947f-fa4c398465f6",
+			"name": "https://localhost:44305/api/Categoria/tipo/oculto",
+			"url": "https://localhost:44305/api/Categoria/tipo/oculto",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e748bb3c-94a5-4eea-9967-84fd8a4c8c14",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "{\r\n        \"idPerfil\": 5,\r\n        \"permissao\": \"Alunos\",\r\n        \"usuario\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "1687a379-c3fb-4012-999f-8b54e2944262",
+			"name": "https://localhost:44305/api/usuario",
+			"url": "https://localhost:44305/api/usuario",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "c9f8be7f-4c2c-4258-9856-1cb5c83274a0",
+			"pathVariables": {}
+		},
+		{
+			"id": "1f31c118-f950-41f4-bfd2-c7333c318e70",
+			"name": "https://localhost:44305/api/AlunoTurma",
+			"url": "https://localhost:44305/api/AlunoTurma",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "5dff8953-69b9-4702-bee2-bb6c32899455",
+			"rawModeData": " {\r\n            \"matricula\": \"52343241\",\r\n            \"idTurma\": \"a6b9acc6-3713-4579-bc1d-30470996b6a7\",\r\n            \"idUsuario\": \"8ab44423-b7ef-43c0-a456-294c0047ce3a\"\r\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "22b7950e-4b0c-49e9-a761-2ec3c4b4012e",
+			"name": "https://localhost:44305/api/curso",
+			"url": "https://localhost:44305/api/curso/titulo/Alo",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9e531a14-b696-4fd4-8668-92c902404134",
+			"pathVariables": {}
+		},
+		{
+			"id": "26075bf3-099c-447f-be92-e2cdbb91a02e",
+			"name": "POST Objetivo",
+			"url": "https://localhost:44305/api/Objetivo",
+			"description": "Cadastra Objetivo",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "d1787b26-1987-4ef8-be6f-81d75dbd7450",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "270d5807-2255-4978-8e4c-5d88f27fdc0c",
+			"name": "https://localhost:44305/api/Categoria",
+			"url": "https://localhost:44305/api/Categoria/6c1051c7-61e8-4956-95ce-7168a8d8c96b",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e748bb3c-94a5-4eea-9967-84fd8a4c8c14",
+			"rawModeData": "{\r\n        \"idPerfil\": 5,\r\n        \"permissao\": \"Alunos\",\r\n        \"usuario\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "30a7b602-bb8e-4d32-b7dc-502a4d663dd1",
+			"name": "https://localhost:44305/api/curso/14ff57d4-689e-4451-a143-434e86472aee",
+			"url": "https://localhost:44305/api/curso/14ff57d4-689e-4451-a143-434e86472aee",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9e531a14-b696-4fd4-8668-92c902404134",
+			"pathVariables": {}
+		},
+		{
+			"id": "33e0f44d-3f6d-4b85-8436-d8f610414e1e",
+			"name": "GET ObjetivoAluno",
+			"url": "https://localhost:44305/api/ObjetivoAluno",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "fc68d488-ec28-4d20-892b-73621d0528b3",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "3630b34b-cb83-4abd-85fd-60757060daa5",
+			"name": "https://localhost:44305/api/login",
+			"url": "https://localhost:44305/api/login",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "3188da62-27fe-4587-a9ab-95b8ccfb0a36",
+			"rawModeData": "{\r\n    \"email\": \"elila@gmail.com\",\r\n    \"senha\": \"54321\"\r\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "36bb6a82-82f2-46a4-8fe0-8da46599a165",
+			"name": "https://localhost:44305/api/Perfil",
+			"url": "https://localhost:44305/api/Perfil",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "d929d94c-12d7-40ff-8413-45c89a82a45b",
+			"rawModeData": "{\r\n        \"permissao\": \"Alunos\",\r\n        \"usuario\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "3ba1694e-0915-46ca-bca3-724171597b50",
+			"name": "https://localhost:44305/api/professorturma",
+			"url": "https://localhost:44305/api/professorturma",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "1922989c-a512-4277-914d-2d0478c9ba1c",
+			"pathVariables": {}
+		},
+		{
+			"id": "3caa4c7e-9ff7-451d-afa9-5dcf1d021af8",
+			"name": "https://localhost:44305/api/curtida",
+			"url": "https://localhost:44305/api/curtida/7549a222-adca-4be8-bb11-20cfccf6c309",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "a8c1c50a-8b99-467b-8f65-7568e6be4252",
+			"pathVariables": {}
+		},
+		{
+			"id": "3d0ffdc3-ff2d-4028-9f52-03e6511bc0f4",
+			"name": "https://localhost:44305/api/AlunoTurma",
+			"url": "https://localhost:44305/api/AlunoTurma",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "5dff8953-69b9-4702-bee2-bb6c32899455",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "3d5538e9-b539-4f26-bcb3-6330dd74b395",
+			"name": "https://localhost:44305/api/usuario/8327cbfb-f2a5-4102-9a8d-5640dbb585b5",
+			"url": "https://localhost:44305/api/usuario/8327cbfb-f2a5-4102-9a8d-5640dbb585b5",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "c9f8be7f-4c2c-4258-9856-1cb5c83274a0",
+			"pathVariables": {}
+		},
+		{
+			"id": "3f2460c9-bfef-4e54-80dd-e97d3d4b179e",
+			"name": "https://localhost:44305/api/Perfil",
+			"url": "https://localhost:44305/api/Perfil",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "d929d94c-12d7-40ff-8413-45c89a82a45b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "{\r\n        \"idPerfil\": 5,\r\n        \"permissao\": \"Alunos\",\r\n        \"usuario\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "40b543f7-bb95-4001-9b28-43acd627c87c",
+			"name": "Delete ObjetivoAluno",
+			"url": "https://localhost:44305/api/ObjetivoAluno",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "fc68d488-ec28-4d20-892b-73621d0528b3",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "50b8f175-ab90-4177-a374-3e6f35dffb84",
+			"name": "https://localhost:44305/api/Turma",
+			"url": "https://localhost:44305/api/Turma",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "c2926090-6e04-41de-a340-5e8f60577ba6",
+			"rawModeData": "{\r\n    \"IdTurma\" : \"\"\r\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "586acd65-9147-410c-b0e6-1b2572b7896a",
+			"name": "https://localhost:44305/api/curso",
+			"url": "https://localhost:44305/api/curso/66eb9ec0-bcd5-4b00-a0f4-4ecd5a82f809",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9e531a14-b696-4fd4-8668-92c902404134",
+			"rawModeData": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "614bddca-992a-4e50-ab33-683d6ae260ee",
+			"name": "https://localhost:44305/api/Turma",
+			"url": "https://localhost:44305/api/Turma",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "c2926090-6e04-41de-a340-5e8f60577ba6",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "654a4f29-dcbd-4b30-bf7b-12616bb7fd4a",
+			"name": "https://localhost:44305/api/usuario",
+			"url": "https://localhost:44305/api/usuario/624a5de6-c976-4323-9912-5349bd90978c",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "c9f8be7f-4c2c-4258-9856-1cb5c83274a0",
+			"rawModeData": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "658b149f-a56d-4758-a4f7-69f34cbe968e",
+			"name": "GET {id} Objetivo",
+			"url": "https://localhost:44305/api/Objetivo/a40a1d37-5ecd-4165-ad98-f4e42fa791ea",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "d1787b26-1987-4ef8-be6f-81d75dbd7450",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "67af5789-5c0f-42b6-8656-8320f34a4169",
+			"name": "https://localhost:44305/api/professorturma",
+			"url": "https://localhost:44305/api/professorturma/37d3a1f7-f4d0-440b-b471-30bcd09dbc32",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "1922989c-a512-4277-914d-2d0478c9ba1c",
+			"rawModeData": "{\r\n            \"idProfessorTurma\": \"37d3a1f7-f4d0-440b-b471-30bcd09dbc32\",\r\n            \"descricao\": \"Professor bom\",\r\n            \"idUsuario\": \"8327cbfb-f2a5-4102-9a8d-5640dbb585b5\",\r\n            \"idTurma\": \"0c2e0bb8-e03e-488c-97c4-419b48f6e9d2\"\r\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "694cea53-15cf-4ffc-ab71-6f8ae4b0896b",
+			"name": "https://localhost:44305/api/Perfil",
+			"url": "https://localhost:44305/api/Perfil/66baeaa4-b9fb-4df1-981b-75f7645600d9",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e9712bd3-7d45-4e63-8625-ccb3e550f8da",
+			"rawModeData": "{\r\n        \r\n        \"idPerfil\": \"1b85e8b9-c231-4184-905c-2dec5cb27bc5\",\r\n        \"permissao\": \"Professor3\",\r\n        \"usuario\": []\r\n\r\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "70ef7dd5-743f-42f0-bc90-d3e8c0763b9c",
+			"name": "https://localhost:44305/api/Perfil",
+			"url": "https://localhost:44305/api/Perfil/1b85e8b9-c231-4184-905c-2dec5cb27bc5",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e9712bd3-7d45-4e63-8625-ccb3e550f8da",
+			"rawModeData": "{\r\n        \r\n        \"idPerfil\": \"1b85e8b9-c231-4184-905c-2dec5cb27bc5\",\r\n        \"permissao\": \"Professor3\",\r\n        \"usuario\": []\r\n\r\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "726a2814-e9b3-4156-91a1-03287128f674",
+			"name": "https://localhost:44305/api/Turma",
+			"url": "https://localhost:44305/api/Turma",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "c2926090-6e04-41de-a340-5e8f60577ba6",
+			"rawModeData": " {\r\n    \"idTurma\": \"a6b9acc6-3713-4579-bc1d-30470996b6a7\",\r\n    \"descricao\": \"Turma Horrivel\",\r\n    \"idCurso\": \"dc65a8d7-5497-4761-b9e8-048695bbd389\"\r\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "72eb7705-a5f4-4294-874b-99b1916e7c29",
+			"name": "https://localhost:44305/api/professorturma/5d36cf65-854c-4104-9ccd-521993689d7e",
+			"url": "https://localhost:44305/api/professorturma/5d36cf65-854c-4104-9ccd-521993689d7e",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "1922989c-a512-4277-914d-2d0478c9ba1c",
+			"pathVariables": {}
+		},
+		{
+			"id": "736df16e-9775-4c17-9059-264da1a05856",
+			"name": "https://localhost:44305/api/curtida",
+			"url": "https://localhost:44305/api/curtida",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "a8c1c50a-8b99-467b-8f65-7568e6be4252",
+			"pathVariables": {}
+		},
+		{
+			"id": "74996d41-6520-445c-9b32-20730e98f756",
+			"name": "https://localhost:44305/api/usuario",
+			"url": "https://localhost:44305/api/usuario",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "c9f8be7f-4c2c-4258-9856-1cb5c83274a0",
+			"rawModeData": "{\r\n            \"nome\": \"Caua\",\r\n            \"senha\": \"12345\",\r\n            \"email\": \"caua@gmail.com\",\r\n            \"dataCadastro\": \"2020-03-03T15:00:00\",\r\n            \"dataUltimoAcesso\": \"2020-03-03T15:00:00\",\r\n            \"idPerfil\": \"0ee3b25d-a503-4c77-aa0a-0e60f669b66f\"\r\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "74d1f609-e714-4930-a847-88af63ea7ac3",
+			"name": "https://localhost:44305/api/professorturma",
+			"url": "https://localhost:44305/api/professorturma",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "1922989c-a512-4277-914d-2d0478c9ba1c",
+			"rawModeData": "\r\n    {\r\n\r\n            \"descricao\": \"Professor ruim\",\r\n            \"idUsuario\": \"8327cbfb-f2a5-4102-9a8d-5640dbb585b5\",\r\n            \"idTurma\": \"0c2e0bb8-e03e-488c-97c4-419b48f6e9d2\",\r\n            \"idTurmaNavigation\": null,\r\n            \"idUsuarioNavigation\": null\r\n            \r\n    }\r\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "769288b4-e61f-4018-8a31-52fb05701404",
+			"name": "https://localhost:44305/api/Instituicao",
+			"url": "https://localhost:44305/api/Instituicao",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "3ab9ae44-7db6-415f-9252-e193f3413972",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "{\r\n        \"idPerfil\": 5,\r\n        \"permissao\": \"Alunos\",\r\n        \"usuario\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "7af6a6d8-1b22-4384-bdda-a0104d0f84a2",
+			"name": "https://localhost:44305/api/Turma",
+			"url": "https://localhost:44305/api/Turma",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "c2926090-6e04-41de-a340-5e8f60577ba6",
+			"rawModeData": " {\r\n    \"descricao\": \"Turma Horrivel\",\r\n    \"idCurso\": \"dc65a8d7-5497-4761-b9e8-048695bbd389\"\r\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "7b53bef9-ddfc-4601-bb82-0f1fe8b483eb",
+			"name": "https://localhost:44305/api/AlunoTurma",
+			"url": "https://localhost:44305/api/AlunoTurma",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "5dff8953-69b9-4702-bee2-bb6c32899455",
+			"rawModeData": " {\r\n            \"matricula\": \"52343241\",\r\n            \"idTurma\": \"a6b9acc6-3713-4579-bc1d-30470996b6a7\",\r\n            \"idUsuario\": \"8ab44423-b7ef-43c0-a456-294c0047ce3a\"\r\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "7bc86ceb-1e4a-4951-b39b-5c5858c30c95",
+			"name": "https://localhost:44305/api/curtida/7549a222-adca-4be8-bb11-20cfccf6c309",
+			"url": "https://localhost:44305/api/curtida/7549a222-adca-4be8-bb11-20cfccf6c309",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "a8c1c50a-8b99-467b-8f65-7568e6be4252",
+			"pathVariables": {}
+		},
+		{
+			"id": "8126931b-4f8c-4180-bc39-fbc403bd5e1e",
+			"name": "https://localhost:44305/api/Instituicao",
+			"url": "https://localhost:44305/api/Instituicao/9541ed30-1e87-45d2-9771-f191d78bb079",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "3ab9ae44-7db6-415f-9252-e193f3413972",
+			"rawModeData": "{\r\n        \"idPerfil\": 5,\r\n        \"permissao\": \"Alunos\",\r\n        \"usuario\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "8c4b8a86-9cc4-4c63-b73d-39d6bf255683",
+			"name": "DELETE Objetivo",
+			"url": "https://localhost:44305/api/Objetivo",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "d1787b26-1987-4ef8-be6f-81d75dbd7450",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "8c9df494-ac0d-4012-ae30-2eb12c3458e4",
+			"name": "PUT Objetivo",
+			"url": "https://localhost:44305/api/Objetivo",
+			"description": "Edita um Objetivo",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "d1787b26-1987-4ef8-be6f-81d75dbd7450",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "9817282f-3093-4b84-aea4-b2d3c57954e9",
+			"name": "https://localhost:44305/api/Categoria/6c1051c7-61e8-4956-95ce-7168a8d8c96b",
+			"url": "https://localhost:44305/api/Categoria/6c1051c7-61e8-4956-95ce-7168a8d8c96b",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e748bb3c-94a5-4eea-9967-84fd8a4c8c14",
+			"rawModeData": "{\r\n    \r\n        \"tipo\": \"OcultoND4\",\r\n        \"objetivo\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "a296a1e9-d7f1-47ba-acf9-5423343a4ce3",
+			"name": "https://localhost:44305/api/Perfil",
+			"url": "https://localhost:44305/api/Perfil/66baeaa4-b9fb-4df1-981b-75f7645600d9",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "d929d94c-12d7-40ff-8413-45c89a82a45b",
+			"rawModeData": "{\r\n        \r\n        \"idPerfil\": \"1b85e8b9-c231-4184-905c-2dec5cb27bc5\",\r\n        \"permissao\": \"Professor3\",\r\n        \"usuario\": []\r\n\r\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "a3f15c45-886e-4b21-ac18-c781b3b03777",
+			"name": "https://localhost:44305/api/usuario/8327cbfb-f2a5-4102-9a8d-5640dbb585b5",
+			"url": "https://localhost:44305/api/usuario/nome/Kaua",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "c9f8be7f-4c2c-4258-9856-1cb5c83274a0",
+			"pathVariables": {}
+		},
+		{
+			"id": "abb8787d-bfad-4d57-8f9e-1778dd3c74be",
+			"name": "POST ObjetivoAluno",
+			"url": "https://localhost:44305/api/ObjetivoAluno",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "fc68d488-ec28-4d20-892b-73621d0528b3",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "b006ac25-3fab-47af-a021-d4f75dc18a6f",
+			"name": "https://localhost:44305/api/curtida",
+			"url": "https://localhost:44305/api/curtida",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "a8c1c50a-8b99-467b-8f65-7568e6be4252",
+			"rawModeData": "{\r\n    \"idUsuario\": \"8327cbfb-f2a5-4102-9a8d-5640dbb585b5\",\r\n    \"idDica\": \"b0911b38-9b44-4e9f-a5a1-ee0f6070fe33\"\r\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "b2444b76-d48b-46ab-9cb0-9a8bb68d70fb",
+			"name": "https://localhost:44305/api/Categoria",
+			"url": "https://localhost:44305/api/Categoria",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e748bb3c-94a5-4eea-9967-84fd8a4c8c14",
+			"rawModeData": "{\r\n    \r\n        \"tipo\": \"OcultoND\",\r\n        \"objetivo\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "b85430c0-6b6d-44d4-b3c3-b89fcf0f614b",
+			"name": "https://localhost:44305/api/Perfil",
+			"url": "https://localhost:44305/api/Perfil",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e9712bd3-7d45-4e63-8625-ccb3e550f8da",
+			"rawModeData": "{\r\n        \"permissao\": \"Alunos\",\r\n        \"usuario\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "c049fce5-cf75-4bee-a6ea-f6e1740e0cb2",
+			"name": "Put ObjetivoAluno",
+			"url": "https://localhost:44305/api/ObjetivoAluno",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "fc68d488-ec28-4d20-892b-73621d0528b3",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "c7c1fee5-62d1-4af8-a0cd-13122431ebf4",
+			"name": "https://localhost:44305/api/usuario",
+			"url": "https://localhost:44305/api/usuario/624a5de6-c976-4323-9912-5349bd90978c",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "c9f8be7f-4c2c-4258-9856-1cb5c83274a0",
+			"rawModeData": "{\r\n            \"nome\": \"Pedro\",\r\n            \"senha\": \"12345\",\r\n            \"email\": \"pedro@gmail.com\",\r\n            \"dataCadastro\": \"2020-03-03T15:00:00\",\r\n            \"dataUltimoAcesso\": \"2020-03-03T15:00:00\",\r\n            \"idPerfil\": \"0ee3b25d-a503-4c77-aa0a-0e60f669b66f\"\r\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "cdf3b071-c284-43bb-a6d9-f6c2738a8aed",
+			"name": "https://localhost:44305/api/login",
+			"url": "https://localhost:44305/api/login",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "3188da62-27fe-4587-a9ab-95b8ccfb0a36",
+			"rawModeData": "{\r\n    \"email\": \"sesi@gmail.com\",\r\n    \"senha\": \"b4989480b297d3ad291b0741ade9b1a8219eb6c7df9ad85b2b6e7dbb4bb8e9558375e790fa266b11a8ed058f8411b084498e96d98ebabeddfa84be5a583822a5\"\r\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "cef56ad0-68f3-4103-8679-d86256260667",
+			"name": "https://localhost:44305/api/AlunoTurma",
+			"url": "https://localhost:44305/api/AlunoTurma",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "5dff8953-69b9-4702-bee2-bb6c32899455",
+			"rawModeData": " {\r\n    \"idAlunoTurma\": \"acfaa162-c7d8-4bba-b098-0b5aa109633f\"\r\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "d1c659fa-326a-49eb-b21c-f8d469c38ea7",
+			"name": "https://localhost:44305/api/Perfil/permissao/Alunos",
+			"url": "https://localhost:44305/api/Perfil/permissao/Alunos",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "d929d94c-12d7-40ff-8413-45c89a82a45b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "{\r\n        \"idPerfil\": 5,\r\n        \"permissao\": \"Alunos\",\r\n        \"usuario\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "d28ca49d-3c7d-4551-8336-27bef1b0581b",
+			"name": "https://localhost:44305/api/Instituicao",
+			"url": "https://localhost:44305/api/Instituicao/17f9976f-8213-464d-9143-835cd47b41f7",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "3ab9ae44-7db6-415f-9252-e193f3413972",
+			"rawModeData": "{\r\n\r\n        \"nome\": \"SENAI INFORMATICA\",\r\n        \"logradouro\": \"Alameda Barão de limeira\",\r\n        \"numero\": \"289\",\r\n        \"complemento\": \"Prédio\",\r\n        \"bairro\": \"Santa Cecilia\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"uf\": \"SP\",\r\n        \"cep\": \"01202-001\",\r\n        \"curso\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "d8f40f1b-3798-4df9-bda3-a544ea420849",
+			"name": "https://localhost:44305/api/Perfil",
+			"url": "https://localhost:44305/api/Perfil",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e9712bd3-7d45-4e63-8625-ccb3e550f8da",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "{\r\n        \"idPerfil\": 5,\r\n        \"permissao\": \"Alunos\",\r\n        \"usuario\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "db919af5-4269-42a2-9831-447fa43fafcd",
+			"name": "https://localhost:44305/api/Instituicao",
+			"url": "https://localhost:44305/api/Instituicao",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "3ab9ae44-7db6-415f-9252-e193f3413972",
+			"rawModeData": "{\r\n        \"nome\": \"SENAI DO FUSCA\",\r\n        \"logradouro\": \"RUA DO FUSCA\",\r\n        \"numero\": \"115\",\r\n        \"complemento\": \"AP\",\r\n        \"bairro\": \"BARRA FUNDA\",\r\n        \"cidade\": \"SÃO FUSCA\",\r\n        \"uf\": \"SF\",\r\n        \"cep\": \"01155-060\",\r\n        \"curso\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "e1094f18-2a64-405a-9e7d-cf2a8876ff06",
+			"name": "https://localhost:44305/api/Turma",
+			"url": "https://localhost:44305/api/Turma/0c2e0bb8-e03e-488c-97c4-419b48f6e9d2",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJLYXVhIiwiZW1haWwiOiJrYXVhQGdtYWlsLmNvbSIsImp0aSI6IjM1ZWM3ZmFiLTRlMzUtNGY2MS04ZDFkLTdhYjVmMGE4MGE1NiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlByb2Zlc3NvciIsImV4cCI6MTYwMTY4Njg2MiwiaXNzIjoiZWR1eC5jb20uYnIiLCJhdWQiOiJlZHV4LmNvbS5iciJ9.JnZPy9YebxdOkLnaAkexAD2Vr6jNHIP95bUPAQyo5Yk"
+					}
+				]
+			},
+			"events": null,
+			"folder": "c2926090-6e04-41de-a340-5e8f60577ba6",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "e2e7d0a1-9e17-4180-9966-a5aaa9c425a7",
+			"name": "GET Objetivo",
+			"url": "https://localhost:44305/api/Objetivo",
+			"description": "Lista objetivos",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "d1787b26-1987-4ef8-be6f-81d75dbd7450",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "e376fdc8-9d4f-47e4-b90b-448b0b93b240",
+			"name": "https://localhost:44305/api/Categoria",
+			"url": "https://localhost:44305/api/Categoria",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e748bb3c-94a5-4eea-9967-84fd8a4c8c14",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "{\r\n        \"idPerfil\": 5,\r\n        \"permissao\": \"Alunos\",\r\n        \"usuario\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "e4c80531-6c00-4254-811b-a74fe40544bd",
+			"name": "Get {id} ObjetivoAluno",
+			"url": "https://localhost:44305/api/ObjetivoAluno",
+			"description": null,
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "fc68d488-ec28-4d20-892b-73621d0528b3",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "e55a60ef-df81-4f5a-b3ca-f80e1943a6b7",
+			"name": "https://localhost:44305/api/Perfil/permissao/Alunos",
+			"url": "https://localhost:44305/api/Perfil/permissao/Alunos",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "e9712bd3-7d45-4e63-8625-ccb3e550f8da",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "{\r\n        \"idPerfil\": 5,\r\n        \"permissao\": \"Alunos\",\r\n        \"usuario\": []\r\n    }",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "e95d423d-c631-4c4e-a727-31575d1a64ee",
+			"name": "https://localhost:44305/api/dica",
+			"url": "https://localhost:44305/api/dica",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "params",
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "2c987af4-d5ab-4d16-abd1-e2701f634617",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"pathVariables": {}
+		},
+		{
+			"id": "eb7929fa-1e63-494d-b0c4-246f9ed2ab21",
+			"name": "https://localhost:44305/api/professorturma/5d36cf65-854c-4104-9ccd-521993689d7e",
+			"url": "https://localhost:44305/api/professorturma/5d36cf65-854c-4104-9ccd-521993689d7e",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "1922989c-a512-4277-914d-2d0478c9ba1c",
+			"pathVariables": {}
+		},
+		{
+			"id": "ec0a5fef-04dd-4400-b4bd-5127c873005f",
+			"name": "https://localhost:44305/api/Perfil",
+			"url": "https://localhost:44305/api/Perfil/1b85e8b9-c231-4184-905c-2dec5cb27bc5",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "d929d94c-12d7-40ff-8413-45c89a82a45b",
+			"rawModeData": "{\r\n        \r\n        \"idPerfil\": \"1b85e8b9-c231-4184-905c-2dec5cb27bc5\",\r\n        \"permissao\": \"Professor3\",\r\n        \"usuario\": []\r\n\r\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "fe1d4148-e0fe-4d17-be5e-1fb8d11417e4",
+			"name": "https://localhost:44305/api/curso",
+			"url": "https://localhost:44305/api/curso",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9e531a14-b696-4fd4-8668-92c902404134",
+			"pathVariables": {}
+		}
+	]
+}
