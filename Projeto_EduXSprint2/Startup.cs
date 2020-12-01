@@ -33,6 +33,17 @@ namespace Projeto_EduXSprint2
         {
             services.AddControllers();
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: "MyPolicy",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin()
+                                .AllowAnyMethod()
+                                .AllowAnyHeader();
+                    });
+            });
+
             // JWT
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>
@@ -94,6 +105,7 @@ namespace Projeto_EduXSprint2
             // Usamos efetivamente a autenticação
             app.UseAuthentication();
 
+            app.UseCors("MyPolicy");
 
             app.UseAuthorization();
 

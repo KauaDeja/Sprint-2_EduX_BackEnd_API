@@ -27,7 +27,7 @@ namespace Projeto_EduXSprint2.Controllers
         /// Lista todos os objetivos cadastrados
         /// </summary>
         /// <returns>Objetivos Cadastrados</returns>
-        [Authorize]
+
         [HttpGet]
        
         public IActionResult Get()
